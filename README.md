@@ -1,13 +1,39 @@
 # Portafolio · Dody Dueñas Remache
 
-Analista de datos / Data Scientist junior · Guayaquil, Ecuador · Remoto LatAm
+**Analista de Datos / Data Scientist junior · Guayaquil, Ecuador · Remoto LatAm**
 
-🌐 **https://dodysalim.github.io/**
+[Ver portafolio](https://dodysalim.github.io/) · [GitHub](https://github.com/dodysalim) · [LinkedIn](https://www.linkedin.com/in/dody-dueñas-remache-079164296/)
 
-Sitio estático (HTML, CSS y JavaScript) con mis proyectos de Henry, No Country y personales, más una vista interactiva de datos de Power BI.
+Sitio estático con 13 casos de Henry, No Country y proyectos personales. Incluye búsqueda por nombre o tecnología, filtros por origen, español/inglés, enlaces Power BI y análisis interactivo de agregados bancarios.
 
-- `index.html`: página principal
-- `style.css`, `app.js`, `i18n.js`: estilos, lógica y traducción español/inglés
-- `bank-data.json`: datos agregados del proyecto Bank Transactions
+## Módulo 4 de Henry
 
-[GitHub](https://github.com/dodysalim) · [LinkedIn](https://www.linkedin.com/in/dody-duenas/) · dodydurema67@gmail.com
+- [FinanceGuard](https://github.com/dodysalim/churn-prediction-financeguard): proyecto integrador localizado en la carpeta M4, con notebooks y Power BI.
+- [HealthPredict](projects/healthpredict/README.md): práctica de clasificación revisada, notebook guiado y seis pruebas de integridad y separación por paciente.
+
+## Código y vista local
+
+- `index.html`: estructura y metadatos.
+- `app.js`: catálogo, búsqueda, filtros, casos y análisis.
+- `i18n.js`: traducción y detección español/inglés.
+- `style.css`: presentación oscura y reglas adaptables al ancho.
+- `bank-data.json`: agregados originales de la vista interactiva.
+
+```bash
+python -m http.server 8000
+```
+
+Abre http://localhost:8000. Para la práctica M4, sigue las instrucciones de su carpeta; sus datos originales aún faltan. Los archivos fuente Power BI de TechCore y Bank Transactions no están incorporados a este repositorio; sus fichas indican ese alcance.
+
+## Actualizar y comprobar
+
+Actualiza las fichas originales en `app.js` y sus traducciones en `i18n.js`. Comprueba los filtros de Henry / No Country / Personales, búsqueda vacía, diálogos, cambio de idioma y tabla de agregados. Mantén la atribución de proyectos colectivos y distingue pruebas, resultados de notebooks y escenarios simulados.
+
+```bash
+node --check app.js
+node --check i18n.js
+python -m pip install -r projects/healthpredict/requirements.txt
+python -m pytest projects/healthpredict/tests -q -o pythonpath=projects/healthpredict
+```
+
+GitHub Pages publica la raíz de `main`; no necesita otro proveedor de hosting.
