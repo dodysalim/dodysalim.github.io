@@ -4,9 +4,11 @@
 
 [Ver portafolio](https://dodysalim.github.io/) · [GitHub](https://github.com/dodysalim) · [LinkedIn](https://www.linkedin.com/in/dody-dueñas-remache-079164296/)
 
-Sitio estático con 13 casos de Henry, No Country y proyectos personales. Incluye búsqueda por nombre o tecnología, filtros por origen, español/inglés, enlaces Power BI y análisis interactivo de agregados bancarios.
+Sitio estático con 12 proyectos (5 Henry, 3 No Country y 4 personales) de Henry, No Country y proyectos personales. Incluye búsqueda por nombre o tecnología, filtros por origen, español/inglés, enlaces Power BI y análisis interactivo de agregados bancarios.
 
 ## Módulo 4 de Henry
+
+Una sola ficha reúne los dos trabajos del módulo; no se cuentan como dos proyectos distintos.
 
 - [FinanceGuard](https://github.com/dodysalim/churn-prediction-financeguard): proyecto integrador localizado en la carpeta M4, con notebooks y Power BI.
 - [HealthPredict](projects/healthpredict/README.md): práctica de clasificación revisada, notebook guiado y seis pruebas de integridad y separación por paciente.
