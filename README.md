@@ -4,7 +4,7 @@
 
 [Ver portafolio](https://dodysalim.github.io/) · [GitHub](https://github.com/dodysalim) · [LinkedIn](https://www.linkedin.com/in/dody-dueñas-remache-079164296/)
 
-Sitio estático con 12 proyectos (5 Henry, 3 No Country y 4 personales) de Henry, No Country y proyectos personales. Incluye búsqueda por nombre o tecnología, filtros por origen, español/inglés, enlaces Power BI y análisis interactivo de agregados bancarios.
+Sitio estático con 13 proyectos (5 Henry, 4 No Country y 4 personales) de Henry, No Country y proyectos personales. Incluye búsqueda por nombre o tecnología, filtros por origen, español/inglés, enlaces Power BI y análisis interactivo de agregados bancarios.
 
 ## Módulo 4 de Henry
 
@@ -39,3 +39,7 @@ python -m pytest projects/healthpredict/tests -q -o pythonpath=projects/healthpr
 ```
 
 GitHub Pages publica la raíz de `main`; no necesita otro proveedor de hosting.
+
+## ConversaAI · No Country
+
+Caso NLP del equipo S04-26-40, con enlace a [ConversaAI](https://github.com/dodysalim/ConversaAI-NLP-Support-Analytics). Conserva la atribución del equipo y distingue el score heurístico de churn de una probabilidad calibrada.
