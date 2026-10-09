@@ -23,7 +23,7 @@ El dashboard final contiene diez páginas, desde la portada y el resumen ejecuti
 
 ## Inicio con rutas automáticas
 
-Ejecuta [INICIAR_TECHCORE.bat](INICIAR_TECHCORE.bat) después de descargar y extraer toda esta carpeta. El BAT llama al script PowerShell incluido, adapta las fuentes locales y genera una plantilla PBIT que Power BI puede abrir y cargar. Guarda el resultado como un nuevo PBIX. Consulta [las instrucciones y límites](LEEME_INICIO.md). Requiere Windows, Power BI Desktop y conexión para descargar pbi-tools en el primer uso. Esta automatización está preparada; su ejecución completa necesita validación en Windows.
+Ejecuta [INICIAR_TECHCORE.bat](INICIAR_TECHCORE.bat) después de descargar y extraer toda esta carpeta. El BAT llama al script PowerShell incluido, adapta las fuentes locales y genera una plantilla PBIT que Power BI puede abrir y cargar. Guarda el resultado como un nuevo PBIX. Consulta [las instrucciones y límites](LEEME_INICIO.md). Requiere Windows, Power BI Desktop y conexión para descargar pbi-tools y preparar .NET 8 en el primer uso. La compilación usa pbi-tools Core para evitar la incompatibilidad del empaquetador con Power BI Desktop 2.158. Esta automatización está preparada; su ejecución completa necesita validación en Windows.
 
 Los datos de clientes son ficticios, según la confirmación del autor.
 
