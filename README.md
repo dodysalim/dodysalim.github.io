@@ -43,3 +43,7 @@ GitHub Pages publica la raíz de `main`; no necesita otro proveedor de hosting.
 ## ConversaAI · No Country
 
 Caso NLP del equipo S04-26-40, con enlace a [ConversaAI](https://github.com/dodysalim/ConversaAI-NLP-Support-Analytics). Conserva la atribución del equipo y distingue el score heurístico de churn de una probabilidad calibrada.
+
+## Selección para reclutadores y CV
+
+La página inicial destaca Cliente360, KrioMetrics y ConversaAI. El botón de descarga enlaza a `assets/Dody_Duenas_CV.pdf`, versión de dos páginas que identifica No Country como simulaciones profesionales y contextualiza métricas y escenarios. El original adjunto se conserva fuera del repositorio.
