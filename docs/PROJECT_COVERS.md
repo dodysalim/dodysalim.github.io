@@ -1,10 +1,10 @@
 # Project cover design
 
-Thirteen conceptual illustrations created with the built-in image generation tool for the portfolio. They are visual covers, not screenshots or measured charts. Existing dashboard evidence is kept in the project cases.
+Thirteen conceptual illustrations serve as visual covers for the portfolio. Existing dashboard screenshots and measured charts are available in the project cases.
 
-## Shared prompt
+## Visual style
 
-Premium editorial 3D illustration for a data analyst portfolio card. Wide 16:9 composition; dark midnight navy background; translucent glass and sculptural materials; crisp centered focal object; cinematic rim light. Readable at thumbnail size. No project titles, logos, watermarks, UI panels or factual charts.
+The covers share a 16:9 composition, a dark midnight navy background, glass and sculptural materials, and a central subject that remains readable at thumbnail size. Each project uses its own subject and accent colors.
 
 ## Subjects
 
