@@ -1,6 +1,6 @@
 'use strict';
 const projects = [
-{"name": "ConversaAI", "label": "NO COUNTRY / S04-26 · EQUIPO 40", "category": "ml", "tags": ["Python", "NLP", "XLM-R", "Streamlit"], "description": "Análisis de sentimiento, intención y señales de abandono en conversaciones de soporte en español y portugués.", "problem": "Transformar mensajes de soporte en información para identificar necesidades del cliente y priorizar conversaciones.", "approach": "Pipeline NLP con XLM-R para tres clases de sentimiento y nueve intenciones, scoring heurístico de churn y alternativa de demostración offline.", "evidence": ["Código del pipeline y notebooks de entrenamiento publicados.", "Corpus de demostración bilingüe y dashboard Streamlit.", "Proyecto colectivo de Rosa Isela González Díaz, Jefferson Mangier y Dody Dueñas Remache."], "note": "Simulación laboral No Country. El riesgo de churn es un score heurístico, no una probabilidad calibrada. Los modelos y las métricas del equipo no se reentrenaron en esta incorporación.", "url": "ConversaAI-NLP-Support-Analytics", "cover": "assets/conversaai-cover.svg"},
+{"name": "ConversaAI", "label": "NO COUNTRY / S04-26 · EQUIPO 40", "category": "ml", "tags": ["Python", "NLP", "XLM-R", "Streamlit"], "description": "Análisis de sentimiento, intención y señales de abandono en conversaciones de soporte en español y portugués.", "problem": "Transformar mensajes de soporte en información para identificar necesidades del cliente y priorizar conversaciones.", "approach": "Pipeline NLP con XLM-R para tres clases de sentimiento y nueve intenciones, scoring heurístico de churn y alternativa de demostración offline.", "evidence": ["Código del pipeline y notebooks de entrenamiento publicados.", "Corpus de demostración bilingüe y dashboard Streamlit.", "Proyecto colectivo de Rosa Isela González Díaz, Jefferson Mangier, Dody Dueñas Remache y Geyson David."], "note": "Simulación laboral No Country. El riesgo de churn es un score heurístico, no una probabilidad calibrada. Los modelos y las métricas del equipo no se reentrenaron en esta incorporación.", "url": "ConversaAI-NLP-Support-Analytics", "cover": "assets/conversaai-cover.svg"},
 {name:'TechCore · Ventas',label:'HENRY / MÓDULO 3',category:'bi',tags:['Power BI','DAX','Python'],description:'De ventas sin transformar a un modelo relacional y un informe de negocio.',problem:'Analizar ventas por producto, cliente, vendedor y sucursal manteniendo el contexto de filtros.',approach:'Limpieza con Power Query, modelado en Python y dashboard Power BI con seguridad por roles documentada.',evidence:['Caso académico documentado en el portafolio.','Preguntas de ventas y estructura del análisis.','Los archivos originales PBIX y del modelo están pendientes de incorporar al repositorio.'],note:'Proyecto académico. El costo del 65 % y el margen del 35 % se documentan como supuestos simulados, no como rentabilidad observada.',url:'@techcore'},
 {name:'Bank Transactions',label:'PERSONAL / POWER BI',category:'bi',tags:['Power BI','Power Query','DAX'],description:'Más de un millón de registros organizados por fecha, sector y ubicación.',problem:'Distinguir cantidad de registros, transacciones y valor para comparar sectores y ubicaciones.',approach:'Vista web de agregados por mes, sector y ubicación. Incluye validación del archivo de agregados publicado.',evidence:['1.004.480 registros representados en los agregados.','Archivo bank-data.json disponible.','Filtros y tabla mensual con valores exactos.','Los archivos PBIP originales están pendientes de incorporar al repositorio.'],note:'Moneda y origen institucional no especificados. Las cifras son agregados del dataset proporcionado.',url:'@bank'},
 {name:'Churn Intelligence',label:'NO COUNTRY / EQUIPO 40',category:'ml',tags:['XGBoost','Streamlit','Supabase'],description:'Análisis y predicción del abandono de clientes en comercio electrónico.',problem:'Identificar clientes con riesgo de abandono a partir de su comportamiento de compra.',approach:'El repositorio documenta segmentación RFM, etiquetado de churn, modelos y un dashboard.',evidence:['Notebooks de exploración, ingeniería de características y modelado.','Pipelines de entrenamiento e inferencia.','Pruebas unitarias y documentación de métricas.'],note:'Proyecto en equipo; repositorio derivado mediante fork. Las métricas del README no se han reentrenado en esta revisión.',url:'-E-commerce-Churn-Model-S03-26-Equipo-40-Data-Science'},
@@ -15,6 +15,102 @@ const projects = [
 ,
 {"name": "M4 · HealthPredict y FinanceGuard", "label": "HENRY / MÓDULO 4", "category": "ml", "tags": ["Python", "scikit-learn", "Stacking", "Power BI"], "description": "Dos trabajos del módulo: clasificación por paciente y predicción de abandono bancario.", "problem": "Evaluar clasificación con dos casos académicos: riesgo por paciente y abandono bancario.", "approach": "Join validado, imputación, escalado y One-Hot dentro del pipeline. Holdout por patient_id y regresión logística. EDA, regresión logística, boosting, stacking, segmentación y umbral por costos.", "evidence": ["HealthPredict: código portable, notebook guiado y seis pruebas aprobadas.", "FinanceGuard: 10.000 clientes, cuatro notebooks y Power BI."], "note": "Proyecto académico Henry M4. Los CSV originales no estaban en la carpeta localizada: no se publican AUC ni resultados clínicos. Las pruebas usan fixtures sintéticos identificados. Las métricas históricas pertenecen a los notebooks guardados; el stacking no se reentrenó en esta revisión. El ROI corresponde a escenarios, no a ingresos recuperados observados.", "url": "churn-prediction-financeguard", "components": [{"name": "HealthPredict", "url": "https://github.com/dodysalim/dodysalim.github.io/tree/main/projects/healthpredict"}, {"name": "FinanceGuard", "url": "https://github.com/dodysalim/churn-prediction-financeguard"}]}
 ];
+
+// Official showcases and publicly documented team attribution.
+const noCountryCredits = {
+  "Proyecto-No-Country": {
+    "showcase": "https://nocountry.tech/showcase/simulacion-laboral-noviembre-2025/equipo-27-datascience",
+    "edition": "Noviembre 2025",
+    "official": "Market Scraper",
+    "team": [
+      [
+        "Juan",
+        "Machine Learning Engineer"
+      ],
+      [
+        "Rosa",
+        "Data Scientist"
+      ],
+      [
+        "Dody",
+        "Data analyst"
+      ]
+    ]
+  },
+  "S02-26-E45-Data_Science_EquineLead": {
+    "showcase": "https://nocountry.tech/showcase/simulacion-laboral-febrero-2026/equipo-45-data-science",
+    "edition": "Febrero 2026",
+    "official": "EquineLead",
+    "team": [
+      [
+        "Alexander Rios",
+        "Data Scientist & ML Engineer"
+      ],
+      [
+        "Daisy Quinteros",
+        "Data Engineer & Data Scientist"
+      ],
+      [
+        "Iñaki Rosello",
+        "Data Scientist & ML Engineer"
+      ],
+      [
+        "Dody Dueñas",
+        "Data Analyst"
+      ]
+    ]
+  },
+  "-E-commerce-Churn-Model-S03-26-Equipo-40-Data-Science": {
+    "showcase": "https://nocountry.tech/showcase/simulacion-laboral-marzo-2026/equipo-40-data-science",
+    "edition": "Marzo 2026",
+    "official": "E-commerce Churn Model",
+    "team": [
+      [
+        "Lucel",
+        "Data"
+      ],
+      [
+        "Junior Alexis",
+        "Data Scientist"
+      ],
+      [
+        "Geyson David",
+        "Data Scientist"
+      ],
+      [
+        "Dody",
+        "Data analyst"
+      ]
+    ]
+  },
+  "ConversaAI-NLP-Support-Analytics": {
+    "showcase": "https://nocountry.tech/showcase/simulacion-laboral-abril-2026/equipo-40-data-science",
+    "edition": "Abril 2026",
+    "official": "ConversaAI",
+    "team": [
+      [
+        "Jefferson Mangier",
+        "Data Scientist"
+      ],
+      [
+        "Rosa Isela González Díaz",
+        "Data Scientist"
+      ],
+      [
+        "Dody Dueñas Remache",
+        "Data Scientist"
+      ],
+      [
+        "Geyson David",
+        "Data analyst"
+      ]
+    ]
+  }
+};
+projects.forEach(p => { if (noCountryCredits[p.url]) Object.assign(p, noCountryCredits[p.url]); });
+const showcaseLink = p => p.showcase ? `<a class="showcase-link" href="${p.showcase}" target="_blank" rel="noopener noreferrer">No Country Showcase ↗</a>` : '';
+const teamCredits = p => p.team ? `<section class="team-credits"><h3>Equipo y créditos</h3><p><span>Edición No Country:</span> <span>${p.edition}</span> · ${p.official}</p><ul>${p.team.map(([name,role])=>`<li><strong>${name}</strong> · <span>${role}</span></li>`).join('')}</ul><p class="caption">Nombres públicos del showcase y de la documentación del equipo. Los roles de EquineLead siguen el README del proyecto.</p>${showcaseLink(p)}</section>` : '';
+
 const origin = p => p.label.startsWith('HENRY') ? 'henry' : p.label.startsWith('NO COUNTRY') ? 'nocountry' : 'personal';
 const repoUrl = p => p.url === '@health' ? 'https://github.com/dodysalim/dodysalim.github.io/tree/main/projects/healthpredict' : p.url === '@techcore' ? 'https://github.com/dodysalim/dodysalim.github.io/tree/main/projects/techcore-sales-powerbi' : p.url === '@bank' ? 'https://github.com/dodysalim/dodysalim.github.io/tree/main/projects/bank-transactions-powerbi' : 'https://github.com/dodysalim/' + p.url;
 const componentLinks = p => p.components ? `<div class="card-actions">${p.components.map(c=>`<a href="${c.url}" target="_blank" rel="noopener">${c.name} ↗</a>`).join('')}</div>` : '';
@@ -33,7 +129,7 @@ function renderProjects(filter=activeFilter){
   count++;
   const article=document.createElement('article');article.className='project-card';article.dataset.origin=origin(p);
   const cover=p.url.startsWith('@')?'':`<img class="project-cover" src="${p.cover || `https://raw.githubusercontent.com/dodysalim/${p.url}/main/docs/cover.svg`}" alt="" loading="lazy" width="1280" height="360">`;
-  article.innerHTML=`${cover}<div class="card-top"><span>${p.label}</span><span>${String(i+1).padStart(2,'0')}</span></div><h3>${p.name}</h3><p>${p.description}</p>${reviewStatus[p.url]?`<span class="review-status">${reviewStatus[p.url]}</span>`:''}<div class="tags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div><div class="card-actions"><button data-project="${i}" aria-label="Ver caso: ${p.name}">Ver caso</button><a href="${repoUrl(p)}" target="_blank" rel="noopener">Repositorio</a></div>${componentLinks(p)}${powerbiRepos.has(p.url)?`<a class="powerbi-link" href="https://github.com/dodysalim/${p.url}/tree/main/powerbi" target="_blank" rel="noopener">Power BI · PC y móvil ↗</a>`:''}`;
+  article.innerHTML=`${cover}<div class="card-top"><span>${p.label}</span><span>${String(i+1).padStart(2,'0')}</span></div><h3>${p.name}</h3><p>${p.description}</p>${reviewStatus[p.url]?`<span class="review-status">${reviewStatus[p.url]}</span>`:''}<div class="tags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div><div class="card-actions"><button data-project="${i}" aria-label="Ver caso: ${p.name}">Ver caso</button><a href="${repoUrl(p)}" target="_blank" rel="noopener">Repositorio</a></div>${componentLinks(p)}${showcaseLink(p)}${powerbiRepos.has(p.url)?`<a class="powerbi-link" href="https://github.com/dodysalim/${p.url}/tree/main/powerbi" target="_blank" rel="noopener">Power BI · PC y móvil ↗</a>`:''}`;
   grid.append(article);translateTree(article);
  });
  const countElement=document.getElementById('project-count');countElement.textContent=String(count);
@@ -46,7 +142,7 @@ document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListen
  renderProjects(button.dataset.filter);
 }));
 
-const dialog=document.getElementById('project-dialog');grid.addEventListener('click',e=>{const button=e.target.closest('[data-project]');if(!button)return;const p=projects[Number(button.dataset.project)];document.getElementById('project-detail').innerHTML=`<p class="eyebrow">${p.label}</p><h2>${p.name}</h2><h3>Problema</h3><p>${p.problem}</p><h3>Enfoque</h3><p>${p.approach}</p><h3>Evidencia disponible</h3><ul>${p.evidence.map(t=>`<li>${t}</li>`).join('')}</ul>${p.image?`<img src="${p.image}" alt="Informe ejecutivo del proyecto Cliente360" loading="lazy">`:''}<h3>Contexto y alcance</h3><p>${p.note}</p>${componentLinks(p)}${p.url?`<a class="button" href="${repoUrl(p)}" target="_blank" rel="noopener">Abrir repositorio</a>`:''}`;translateTree(dialog);dialog.showModal();});dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+const dialog=document.getElementById('project-dialog');grid.addEventListener('click',e=>{const button=e.target.closest('[data-project]');if(!button)return;const p=projects[Number(button.dataset.project)];document.getElementById('project-detail').innerHTML=`<p class="eyebrow">${p.label}</p><h2>${p.name}</h2><h3>Problema</h3><p>${p.problem}</p><h3>Enfoque</h3><p>${p.approach}</p><h3>Evidencia disponible</h3><ul>${p.evidence.map(t=>`<li>${t}</li>`).join('')}</ul>${p.image?`<img src="${p.image}" alt="Informe ejecutivo del proyecto Cliente360" loading="lazy">`:''}${teamCredits(p)}<h3>Contexto y alcance</h3><p>${p.note}</p>${componentLinks(p)}${p.url?`<a class="button" href="${repoUrl(p)}" target="_blank" rel="noopener">Abrir repositorio</a>`:''}`;translateTree(dialog);dialog.showModal();});dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 let bank;const number=n=>new Intl.NumberFormat(document.documentElement.lang === 'en' ? 'en-US' : 'es-EC',{maximumFractionDigits:0}).format(n);const decimal=n=>new Intl.NumberFormat(document.documentElement.lang === 'en' ? 'en-US' : 'es-EC',{maximumFractionDigits:2}).format(n);
 fetch('bank-data.json').then(r=>{if(!r.ok)throw Error('data');return r.json();}).then(data=>{bank=data;for(const name of ['domain','location']){const select=document.getElementById(name);data[name+'s'].forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;select.append(o);});select.addEventListener('change',updateAnalysis);}document.getElementById('metric').addEventListener('change',updateAnalysis);updateAnalysis();}).catch(()=>{document.getElementById('chart-title').textContent='No se pudieron cargar los datos. Recarga la página.';});
 function updateAnalysis(){if(!bank)return;const domain=document.getElementById('domain').value,location=document.getElementById('location').value,metric=document.getElementById('metric').value;const selected=bank.rows.filter(r=>(domain==='all'||r.domain===domain)&&(location==='all'||r.location===location));const monthly=new Map();let rows=0,transactions=0,value=0;for(const r of selected){rows+=r.records;transactions+=r.Transaction_count;value+=r.Value;const m=monthly.get(r.month)||{month:r.month,Value:0,Transaction_count:0};m.Value+=r.Value;m.Transaction_count+=r.Transaction_count;monthly.set(r.month,m);}document.getElementById('rows').textContent=number(rows);document.getElementById('transactions').textContent=number(transactions);document.getElementById('value').textContent=number(value);document.getElementById('average').textContent=transactions?decimal(value/transactions):'—';const series=[...monthly.values()].sort((a,b)=>a.month.localeCompare(b.month));document.getElementById('period').textContent=series.length?series[0].month+' — '+series[series.length-1].month:'—';document.getElementById('chart-title').textContent=metric==='Value'?'Valor agregado por mes':'Transacciones por mes';document.getElementById('monthly-table').innerHTML=series.map(r=>`<tr><th scope="row">${r.month}</th><td>${number(r.Transaction_count)}</td><td>${number(r.Value)}</td></tr>`).join('');translateTree(document.getElementById('chart-title'));drawChart(series,metric);}
