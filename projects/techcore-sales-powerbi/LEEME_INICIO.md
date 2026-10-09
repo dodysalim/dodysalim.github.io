@@ -18,3 +18,7 @@ La plantilla conserva el modelo y el informe extraidos; necesita importar los da
 Se revisaron los archivos originales y la logica de sustitucion. La ejecucion de pbi-tools y Power BI Desktop debe validarse en Windows: no se dispone de esas aplicaciones en el entorno de preparacion.
 
 Documentacion de la herramienta: https://pbi.tools/cli/usage.html
+
+## Correccion para Power BI Desktop 2.158 (septiembre 2026)
+
+La compilacion utiliza pbi-tools **Core**, que evita el empaquetador de Power BI Desktop que provoco MissingMethodException. La extraccion sigue usando pbi-tools Desktop. La primera ejecucion descarga Core y prepara .NET 8 con el instalador oficial de Microsoft dentro de la carpeta del usuario; no necesita permisos de administrador.

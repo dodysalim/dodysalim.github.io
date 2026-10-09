@@ -15,6 +15,46 @@ function Invoke-PbiTools {
     }
 }
 
+
+function Initialize-CoreCompiler {
+    $coreCache = Join-Path $env:LOCALAPPDATA 'TechCore\pbi-tools-core-1.2.0'
+    $script:coreExe = Join-Path $coreCache 'pbi-tools.core.exe'
+    if (-not (Test-Path -LiteralPath $script:coreExe)) {
+        [void](New-Item -ItemType Directory -Path $coreCache -Force)
+        $archive = Join-Path $run 'pbi-tools-core.zip'
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        Write-Host 'Descargando el compilador independiente pbi-tools Core...'
+        Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/pbi-tools/pbi-tools/releases/download/1.2.0/pbi-tools.core.1.2.0_win-x64.zip' -OutFile $archive
+        Expand-Archive -LiteralPath $archive -DestinationPath $coreCache -Force
+    }
+    if (-not (Test-Path -LiteralPath $script:coreExe)) { throw 'No se encontro pbi-tools.core.exe.' }
+    $dotnetRoot = Join-Path $env:LOCALAPPDATA 'TechCore\dotnet8'
+    $dotnet = Join-Path $dotnetRoot 'dotnet.exe'
+    $runtimeReady = $false
+    if (Test-Path -LiteralPath $dotnet) {
+        $runtimeReady = [bool]((& $dotnet --list-runtimes) -match '^Microsoft.NETCore.App 8\.')
+    }
+    if (-not $runtimeReady) {
+        Write-Host 'Preparando .NET 8 en la carpeta de TechCore del usuario...'
+        $installer = Join-Path $run 'dotnet-install.ps1'
+        Invoke-WebRequest -UseBasicParsing -Uri 'https://dot.net/v1/dotnet-install.ps1' -OutFile $installer
+        # Proceso separado: el instalador oficial puede terminar con exit.
+        & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File $installer -Runtime dotnet -Channel 8.0 -Architecture x64 -InstallDir $dotnetRoot -NoPath
+        if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $dotnet)) { throw 'No se pudo preparar .NET 8.' }
+    }
+    # Variables solo para este proceso; no cambian PATH ni la configuracion del sistema.
+    $env:DOTNET_ROOT = $dotnetRoot
+    $env:DOTNET_ROOT_X64 = $dotnetRoot
+    $env:DOTNET_MULTILEVEL_LOOKUP = '0'
+}
+
+function Invoke-CoreCompile {
+    param([string]$Folder, [string]$Template)
+    Initialize-CoreCompiler
+    & $script:coreExe compile -folder $Folder -outPath $Template -format PBIT
+    if ($LASTEXITCODE -ne 0) { throw "pbi-tools Core termino con codigo $LASTEXITCODE." }
+}
+
 function Rewrite-ModelNode {
     param($Node)
     if ($null -eq $Node) { return }
@@ -109,7 +149,7 @@ try {
     [IO.File]::WriteAllText($modelFile, ($model | ConvertTo-Json -Depth 100), $utf8)
     $script:changes | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $run 'rutas_actualizadas.json') -Encoding UTF8
     $template = Join-Path $run 'TechCore_Rutas_Actualizadas.pbit'
-    Invoke-PbiTools -ToolArguments @('compile', $extracted, '-outPath', $template, '-format', 'PBIT')
+    Invoke-CoreCompile -Folder $extracted -Template $template
     if (-not (Test-Path -LiteralPath $template -PathType Leaf)) { throw 'No se genero la plantilla PBIT.' }
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $zip = [IO.Compression.ZipFile]::OpenRead($template)
