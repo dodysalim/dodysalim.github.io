@@ -1,5 +1,33 @@
-# TechCore · Ventas · Henry M3
+# TechCore · Análisis de ventas con Power BI
 
-Caso académico de ventas por producto, cliente, vendedor y sucursal, con modelado relacional, Power Query y medidas DAX.
+Proyecto integrador del módulo 3 de Henry, desarrollado por Dody Salim Dueñas Remache. Reúne la limpieza de ventas, el modelado relacional en Python y el dashboard final de Power BI.
 
-Los archivos originales CSV, workbook y PBIX descritos en el caso están pendientes de incorporarse a esta carpeta. Esta documentación no constituye una descarga del informe Power BI. El costo 65% y margen 35% son supuestos de simulación, no rentabilidad observada.
+## Archivos del proyecto
+
+| Etapa | Entregable |
+| --- | --- |
+| Datos de origen | [ventas.csv](Avances/Avance_1/ventas.csv) |
+| Datos transformados | [ventasTransformed.csv](Avances/Avance_1/ventasTransformed.csv) |
+| Limpieza y transformación | [Power BI del avance 1](Avances/Avance_1/Avance_1_Limpieza_Transformacion.pbix) |
+| Modelado relacional | [Notebook del avance 2](Avances/Avance_2/Avance_2_Modelo_Relacional.ipynb) |
+| Modelo para Power BI | [modeloVentas.xlsx](Avances/Avance_2/modeloVentas.xlsx) |
+| Dashboard final | [Power BI del avance 3](Avances/Avance_3/Avance_3_Dashboard_PowerBI.pbix) |
+| Documentación técnica | [README original](Documentacion/README.md) · [PDF](Documentacion/README.pdf) |
+| Conclusiones | [Conclusiones y recomendaciones](Documentacion/Conclusiones_Recomendaciones.pdf) |
+
+## Qué incluye
+
+El dashboard final contiene diez páginas, desde la portada y el resumen ejecutivo hasta los análisis geográfico, de productos, clientes, vendedores, tiempo, métodos de pago, análisis cruzado y conclusiones. El modelo organiza facturas y detalles de venta junto con clientes, productos, vendedores, sucursales, ciudades y métodos de pago. La documentación explica las medidas DAX, los filtros, la inteligencia de tiempo y la configuración de seguridad por roles.
+
+**Tecnologías:** Power BI, Power Query, DAX, Python, pandas y Excel.
+
+## Cómo abrirlo
+
+1. Descarga esta carpeta o el repositorio completo.
+2. Abre `Avances/Avance_3/Avance_3_Dashboard_PowerBI.pbix` en Power BI Desktop.
+3. Para actualizar los datos, ajusta las rutas de origen en Power Query a la ubicación local del Excel y los CSV descargados.
+4. Para revisar el proceso de modelado, abre el notebook con Jupyter y ajusta la ruta de entrada al CSV de este proyecto.
+
+Los entregables originales se conservan con su estructura por avances. Los archivos PBIX requieren Power BI Desktop; la comprobación de integridad de los archivos no sustituye una prueba de actualización en esa aplicación. El costo y el margen identificados como simulados en la documentación son supuestos analíticos.
+
+[Ver portafolio](https://dodysalim.github.io/)
