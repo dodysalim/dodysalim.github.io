@@ -46,4 +46,4 @@ Caso NLP del equipo S04-26-40, con enlace a [ConversaAI](https://github.com/dody
 
 ## Selección para reclutadores y CV
 
-La página inicial destaca Cliente360, KrioMetrics y ConversaAI. El botón de descarga enlaza a `assets/Dody_Duenas_CV.pdf`, versión de dos páginas que identifica No Country como simulaciones profesionales y contextualiza métricas y escenarios. El original adjunto se conserva fuera del repositorio.
+La página inicial destaca Cliente360, KrioMetrics y ConversaAI. El botón de descarga enlaza a `assets/Dody_Duenas_CV.pdf`, versión de dos páginas que presenta la experiencia en proyectos de datos, aclara el contexto de No Country en una nota y contextualiza métricas y escenarios. El original adjunto se conserva fuera del repositorio.
