@@ -16,3 +16,6 @@ input{font:inherit}.project-tools{display:flex;gap:24px;align-items:end;justify-
 
 /* Official project evidence and compact team credits. */
 .showcase-link{display:flex;align-items:center;min-height:44px;margin-top:12px;padding:10px 14px;border:1px solid #346658;border-radius:8px;color:var(--accent);font-size:14px;font-weight:650;overflow-wrap:anywhere}.showcase-link:hover{background:#15383166}.team-credits{padding:20px 0;border-block:1px solid var(--line);margin:24px 0}.team-credits h3{margin-top:0}.team-credits li{padding:5px 0}.team-credits .caption{font-size:12px}
+
+/* Illustrated project covers share a landscape frame on every card. */
+.project-cover{height:auto;aspect-ratio:16/9;object-fit:cover;background:#101827}.featured-card img{height:auto;aspect-ratio:16/9;object-fit:cover}.card-top>span:last-child{font-variant-numeric:tabular-nums;border:1px solid var(--line);padding:2px 7px;border-radius:6px;flex-shrink:0}.card-top{gap:12px;align-items:start}
