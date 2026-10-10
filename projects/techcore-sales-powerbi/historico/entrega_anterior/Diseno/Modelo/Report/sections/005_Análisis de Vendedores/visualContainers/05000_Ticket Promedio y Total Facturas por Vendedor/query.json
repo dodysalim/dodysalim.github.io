@@ -1,0 +1,89 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            },
+            {
+              "Name": "v",
+              "Entity": "Vendedores",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "_"
+                  }
+                },
+                "Property": "TicketPromedio"
+              },
+              "Name": "_Medidas.TicketPromedio",
+              "NativeReferenceName": "TicketPromedio"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "_"
+                  }
+                },
+                "Property": "TotalFacturas"
+              },
+              "Name": "_Medidas.TotalFacturas",
+              "NativeReferenceName": "TotalFacturas"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "v"
+                  }
+                },
+                "Property": "VendedorNombre"
+              },
+              "Name": "Vendedores.VendedorNombre",
+              "NativeReferenceName": "VendedorNombre"
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "OverlappingPointsSample": {
+                "X": {
+                  "Index": 0
+                },
+                "Y": {
+                  "Index": 1
+                }
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+[
+    {
+        "Fecha":  "2026-10-09T22:03:46.5300298-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Portada",
+        "Archivo":  "comparacion/capturas/original/01-inicio.png",
+        "Indice":  1
+    },
+    {
+        "Fecha":  "2026-10-09T22:03:53.2414176-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Resumen Ejecutivo",
+        "Archivo":  "comparacion/capturas/original/02-resumen.png",
+        "Indice":  2
+    },
+    {
+        "Fecha":  "2026-10-09T22:04:00.0510477-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis Geográfico",
+        "Archivo":  "comparacion/capturas/original/03-geografia.png",
+        "Indice":  3
+    },
+    {
+        "Fecha":  "2026-10-09T22:04:20.7910540-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis de Vendedores",
+        "Archivo":  "comparacion/capturas/original/06-vendedores.png",
+        "Indice":  6
+    },
+    {
+        "Fecha":  "2026-10-09T22:04:27.6614146-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis Temporal",
+        "Archivo":  "comparacion/capturas/original/07-tiempo.png",
+        "Indice":  7
+    },
+    {
+        "Fecha":  "2026-10-09T22:04:34.3839240-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis de Métodos de Pago y Descuentos",
+        "Archivo":  "comparacion/capturas/original/08-pagos.png",
+        "Indice":  8
+    },
+    {
+        "Fecha":  "2026-10-09T22:04:41.1602976-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis Cruzado",
+        "Archivo":  "comparacion/capturas/original/09-cruces.png",
+        "Indice":  9
+    },
+    {
+        "Fecha":  "2026-10-09T22:04:47.8818545-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Conclusiones",
+        "Archivo":  "comparacion/capturas/original/10-conclusiones.png",
+        "Indice":  10
+    },
+    {
+        "Fecha":  "2026-10-09T22:08:10.3505614-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis de Productos",
+        "Archivo":  "comparacion/capturas/original/04-productos.png",
+        "Indice":  4
+    },
+    {
+        "Fecha":  "2026-10-09T22:08:19.6417734-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Original",
+        "Pagina":  "Análisis de Clientes",
+        "Archivo":  "comparacion/capturas/original/05-clientes.png",
+        "Indice":  5
+    }
+]

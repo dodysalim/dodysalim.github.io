@@ -1,0 +1,104 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "p",
+              "Entity": "Productos",
+              "Type": 0
+            },
+            {
+              "Name": "c",
+              "Entity": "Ciudades",
+              "Type": 0
+            },
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "p"
+                  }
+                },
+                "Property": "MarcaProducto"
+              },
+              "Name": "Productos.MarcaProducto",
+              "NativeReferenceName": "MarcaProducto"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "NombreCiudad"
+              },
+              "Name": "Ciudades.NombreCiudad",
+              "NativeReferenceName": "NombreCiudad"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "_"
+                  }
+                },
+                "Property": "VentasTotales"
+              },
+              "Name": "_Medidas.VentasTotales",
+              "NativeReferenceName": "VentasTotales"
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0
+                ],
+                "Subtotal": 1
+              }
+            ]
+          },
+          "Secondary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  1,
+                  2
+                ],
+                "Subtotal": 2
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 3,
+            "Primary": {
+              "Window": {
+                "Count": 100
+              }
+            },
+            "Secondary": {
+              "Top": {
+                "Count": 100
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

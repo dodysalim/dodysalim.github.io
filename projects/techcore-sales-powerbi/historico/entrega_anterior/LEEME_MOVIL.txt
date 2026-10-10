@@ -1,0 +1,32 @@
+TECHCORE EXECUTIVE STUDIO — ESCRITORIO Y MÓVIL
+
+1. Extrae todo el ZIP en una carpeta.
+2. Abre TechCore y ejecuta INICIAR_TECHCORE.bat.
+3. Espera a que Power BI cargue los datos y guarda el informe como PBIX.
+4. En Power BI Desktop, usa Vista > Diseño móvil para revisar la vista vertical.
+
+El mismo informe incluye las diez páginas para escritorio y móvil.
+La vista móvil conserva la paleta azul y blanca, con encabezado TechCore,
+indicadores amplios, filtros táctiles, gráficos en columna y firma al pie.
+La portada permite elegir una sección; la aplicación también permite cambiar
+de página con su navegación habitual.
+
+PARA CONSULTARLO EN TU TELÉFONO
+Publica el PBIX en un espacio de trabajo de Power BI al que tengas acceso.
+Abre Power BI Mobile en Android o iOS, inicia sesión con la misma cuenta y
+selecciona TechCore. En orientación vertical se utiliza el diseño móvil.
+La cuenta y el espacio de trabajo deben permitir acceder al informe.
+El BAT prepara el archivo local; la publicación se realiza desde Power BI.
+
+Si mueves la carpeta, vuelve a ejecutar el BAT para actualizar las rutas.
+Los archivos originales de Avance 3 se conservan.
+
+COMPROBACIONES
+Diez páginas móviles; posiciones sin solapamientos ni desbordamiento de ancho.
+Definiciones PBIR validadas contra los esquemas oficiales de Microsoft.
+Modelo de datos de la plantilla anterior conservado sin cambios.
+La visualización final en Power BI Desktop y en un teléfono debe comprobarse
+en esos dispositivos; no se ha simulado una ejecución nativa en Windows.
+
+Referencia oficial:
+https://learn.microsoft.com/en-us/power-bi/create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view

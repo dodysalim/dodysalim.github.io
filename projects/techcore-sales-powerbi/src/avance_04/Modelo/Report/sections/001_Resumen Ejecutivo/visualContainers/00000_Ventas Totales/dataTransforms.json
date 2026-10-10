@@ -1,0 +1,80 @@
+{
+  "objects": {
+    "categoryLabels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "20D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "VentasTotales",
+        "Name": "_Medidas.VentasTotales",
+        "Type": 3,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "VentasTotales",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "_Medidas.VentasTotales",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "VentasTotales"
+        }
+      }
+    }
+  ]
+}

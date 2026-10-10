@@ -1,0 +1,132 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "_",
+              "Entity": "_Medidas",
+              "Type": 0
+            },
+            {
+              "Name": "s",
+              "Entity": "Sucursales",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "_"
+                  }
+                },
+                "Property": "VentasTotales"
+              },
+              "Name": "_Medidas.VentasTotales",
+              "NativeReferenceName": "VentasTotales"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "s"
+                      }
+                    },
+                    "Hierarchy": "Jerarquía de Ubicación"
+                  }
+                },
+                "Level": "NombreCiudad_Rel"
+              },
+              "Name": "Sucursales.Jerarquía de Ubicación.NombreCiudad_Rel",
+              "NativeReferenceName": "Jerarquía de Ubicación NombreCiudad_Rel"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "s"
+                      }
+                    },
+                    "Hierarchy": "Jerarquía de Ubicación"
+                  }
+                },
+                "Level": "SucursalNombre"
+              },
+              "Name": "Sucursales.Jerarquía de Ubicación.SucursalNombre",
+              "NativeReferenceName": "Jerarquía de Ubicación SucursalNombre"
+            }
+          ],
+          "OrderBy": [
+            {
+              "Direction": 1,
+              "Expression": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "s"
+                        }
+                      },
+                      "Hierarchy": "Jerarquía de Ubicación"
+                    }
+                  },
+                  "Level": "NombreCiudad_Rel"
+                }
+              }
+            },
+            {
+              "Direction": 1,
+              "Expression": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "s"
+                        }
+                      },
+                      "Hierarchy": "Jerarquía de Ubicación"
+                    }
+                  },
+                  "Level": "SucursalNombre"
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "Window": {
+                "Count": 1000
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

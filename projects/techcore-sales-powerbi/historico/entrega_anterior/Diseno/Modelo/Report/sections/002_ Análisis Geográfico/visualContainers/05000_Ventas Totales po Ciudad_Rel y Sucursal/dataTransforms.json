@@ -1,0 +1,144 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Category": [
+      1,
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Sucursales.Jerarquía de Ubicación.NombreCiudad_Rel",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Sucursales.Jerarquía de Ubicación.SucursalNombre",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "VentasTotales",
+        "Name": "_Medidas.VentasTotales",
+        "Type": 3,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "NombreCiudad_Rel",
+        "Name": "Sucursales.Jerarquía de Ubicación.NombreCiudad_Rel",
+        "Type": 2048
+      },
+      {
+        "Restatement": "SucursalNombre",
+        "Name": "Sucursales.Jerarquía de Ubicación.SucursalNombre",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "VentasTotales",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "_Medidas.VentasTotales",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "VentasTotales"
+        }
+      }
+    },
+    {
+      "displayName": "NombreCiudad_Rel",
+      "queryName": "Sucursales.Jerarquía de Ubicación.NombreCiudad_Rel",
+      "roles": {
+        "Category": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sucursales"
+                }
+              },
+              "Hierarchy": "Jerarquía de Ubicación"
+            }
+          },
+          "Level": "NombreCiudad_Rel"
+        }
+      }
+    },
+    {
+      "displayName": "SucursalNombre",
+      "queryName": "Sucursales.Jerarquía de Ubicación.SucursalNombre",
+      "roles": {
+        "Category": true
+      },
+      "sort": 1,
+      "sortOrder": 1,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sucursales"
+                }
+              },
+              "Hierarchy": "Jerarquía de Ubicación"
+            }
+          },
+          "Level": "SucursalNombre"
+        }
+      }
+    }
+  ]
+}

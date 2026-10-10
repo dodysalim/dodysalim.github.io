@@ -1,0 +1,137 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 12,
+    "y": 166,
+    "width": 299,
+    "height": 390,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "Hallazgos Clave",
+                  "textStyle": {
+                    "fontSize": "16pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "Dominio Geográfico:",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": " Bogotá y Medellín lideran las ventas, impulsadas por tener 2 sucursales cada una.",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                }
+              ],
+              "listType": "bullet",
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "Posicionamiento Premium:",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": " Las ventas están dominadas por marcas de gama alta (Lenovo, HP, Apple). El cliente de TechCore busca calidad sobre precio.",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                }
+              ],
+              "listType": "bullet",
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "INSIGHT CRÍTICO:",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": " El TicketPromedio de ",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": "Pagos Digitales",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": " (Transferencia/Billetera) es ",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": "drásticamente superior",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                },
+                {
+                  "value": " al del \"Efectivo\".",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#14243B"
+                  }
+                }
+              ],
+              "listType": "bullet",
+              "horizontalTextAlignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

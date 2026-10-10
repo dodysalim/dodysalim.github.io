@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "width": 323,
+    "height": 60,
+    "z": 0,
+    "tabOrder": 0
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "TECHCORE",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "20pt",
+                    "color": "#FFFFFF",
+                    "fontWeight": "bold"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "EXECUTIVE STUDIO",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "9pt",
+                    "color": "#A0B5D8",
+                    "fontWeight": "normal"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "visualContainerObjects": {
+    "background": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#101D3B'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

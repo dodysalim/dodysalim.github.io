@@ -1,0 +1,80 @@
+{
+  "objects": {
+    "categoryLabels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "20D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "% Margen (Simulado)",
+        "Name": "_Medidas.% Margen (Simulado)",
+        "Type": 1,
+        "Format": "0.00\\ %;-0.00\\ %;0.00\\ %"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "% Margen (Simulado)",
+      "format": "0.00\\ %;-0.00\\ %;0.00\\ %",
+      "queryName": "_Medidas.% Margen (Simulado)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "% Margen (Simulado)"
+        }
+      }
+    }
+  ]
+}

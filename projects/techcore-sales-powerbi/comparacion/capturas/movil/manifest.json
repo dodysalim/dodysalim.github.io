@@ -1,0 +1,282 @@
+[
+    {
+        "Fecha":  "2026-10-09T22:20:05.3356930-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Tiempo",
+        "Archivo":  "comparacion/capturas/movil/07-tiempo-vista-completa.png",
+        "Indice":  7
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:14.5479455-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Pagos",
+        "Archivo":  "comparacion/capturas/movil/08-pagos.png",
+        "Indice":  8
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:02.8100513-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Tiempo",
+        "Archivo":  "comparacion/capturas/movil/07-tiempo.png",
+        "Indice":  7
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:50.9498207-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Vendedores",
+        "Archivo":  "comparacion/capturas/movil/06-vendedores.png",
+        "Indice":  6
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:53.4589726-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Vendedores",
+        "Archivo":  "comparacion/capturas/movil/06-vendedores-vista-completa.png",
+        "Indice":  6
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:38.0307094-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Conclusiones",
+        "Archivo":  "comparacion/capturas/movil/10-conclusiones.png",
+        "Indice":  10
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:40.5100679-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Conclusiones",
+        "Archivo":  "comparacion/capturas/movil/10-conclusiones-vista-completa.png",
+        "Indice":  10
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:28.7816609-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Cruces",
+        "Archivo":  "comparacion/capturas/movil/09-cruces-vista-completa.png",
+        "Indice":  9
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:17.0410674-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Pagos",
+        "Archivo":  "comparacion/capturas/movil/08-pagos-vista-completa.png",
+        "Indice":  8
+    },
+    {
+        "Fecha":  "2026-10-09T22:20:26.2419280-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Cruces",
+        "Archivo":  "comparacion/capturas/movil/09-cruces.png",
+        "Indice":  9
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:06.5592195-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Resumen",
+        "Archivo":  "comparacion/capturas/movil/02-resumen-vista-completa.png",
+        "Indice":  2
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:15.6583092-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Geografía",
+        "Archivo":  "comparacion/capturas/movil/03-geografia.png",
+        "Indice":  3
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:03.9967313-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Resumen",
+        "Archivo":  "comparacion/capturas/movil/02-resumen.png",
+        "Indice":  2
+    },
+    {
+        "Fecha":  "2026-10-09T22:18:50.9245382-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Inicio",
+        "Archivo":  "comparacion/capturas/movil/01-inicio.png",
+        "Indice":  1
+    },
+    {
+        "Fecha":  "2026-10-09T22:18:54.0204081-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Inicio",
+        "Archivo":  "comparacion/capturas/movil/01-inicio-vista-completa.png",
+        "Indice":  1
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:39.0946059-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Clientes",
+        "Archivo":  "comparacion/capturas/movil/05-clientes.png",
+        "Indice":  5
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:41.6016227-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Clientes",
+        "Archivo":  "comparacion/capturas/movil/05-clientes-vista-completa.png",
+        "Indice":  5
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:29.8971433-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Productos",
+        "Archivo":  "comparacion/capturas/movil/04-productos-vista-completa.png",
+        "Indice":  4
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:18.1695601-05:00",
+        "Tipo":  "captura real ajustada a pagina para documentar la estructura",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Geografía",
+        "Archivo":  "comparacion/capturas/movil/03-geografia-vista-completa.png",
+        "Indice":  3
+    },
+    {
+        "Fecha":  "2026-10-09T22:19:27.3868342-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Movil",
+        "Pagina":  "Productos",
+        "Archivo":  "comparacion/capturas/movil/04-productos.png",
+        "Indice":  4
+    }
+]

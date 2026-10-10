@@ -1,0 +1,176 @@
+{
+  "objects": {
+    "mapControls": [
+      {
+        "properties": {
+          "defaultStyle": {
+            "expr": {
+              "Literal": {
+                "Value": "'road'"
+              }
+            }
+          },
+          "showStylePicker": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "showNavigationControls": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "showSelectionControl": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "categoryLabels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bubbleLayer": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "filledMap": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "mapTransparency": {
+            "expr": {
+              "Literal": {
+                "Value": "40L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Tooltips": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Ciudades.NombreCiudad",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "NombreCiudad",
+        "Name": "Ciudades.NombreCiudad",
+        "Type": 2048
+      },
+      {
+        "Restatement": "VentasTotales",
+        "Name": "_Medidas.VentasTotales",
+        "Type": 3,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Tooltips",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "NombreCiudad",
+      "queryName": "Ciudades.NombreCiudad",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Ciudades"
+            }
+          },
+          "Property": "NombreCiudad"
+        }
+      }
+    },
+    {
+      "displayName": "VentasTotales",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "_Medidas.VentasTotales",
+      "roles": {
+        "Tooltips": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "VentasTotales"
+        }
+      }
+    }
+  ]
+}

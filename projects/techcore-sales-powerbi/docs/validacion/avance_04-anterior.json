@@ -1,0 +1,178 @@
+{
+  "archivosPBIRValidados": 495,
+  "erroresEsquema": [],
+  "archivosHistoricosIntactos": 10,
+  "paginas": [
+    {
+      "vista": "Escritorio",
+      "pagina": "Inicio",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Resumen",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Geografía",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Productos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Clientes",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Vendedores",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Tiempo",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Pagos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Cruces",
+      "moviles": 14,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Conclusiones",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Inicio",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Resumen",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Geografía",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Productos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Clientes",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Vendedores",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Tiempo",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Pagos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Cruces",
+      "moviles": 14,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Conclusiones",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true
+    }
+  ],
+  "plantillas": [
+    {
+      "vista": "Escritorio",
+      "archivo": "TechCore_Escritorio_Avance_4.pbit",
+      "bytes": 294796,
+      "sha256": "54e11c8022b338d58c6baf2d90a35c65f551361d693cb8a124a2121cd336cbbf",
+      "modeloMedidasRelacionesRolesConservados": true,
+      "definicionesSincronizadas": true,
+      "recursosPresentes": true
+    },
+    {
+      "vista": "Movil",
+      "archivo": "TechCore_Movil_Avance_4.pbit",
+      "bytes": 261804,
+      "sha256": "fb4288e185f34221828d9df3584da6ff24aeb5473bb57f32e0cab0c877bed4a4",
+      "modeloMedidasRelacionesRolesConservados": true,
+      "definicionesSincronizadas": true,
+      "recursosPresentes": true
+    }
+  ],
+  "revisionEnPowerBIDesktop": "Pendiente de apertura y actualización nativa",
+  "revisionEnTelefono": "Pendiente en Power BI Mobile",
+  "logotipoOriginalEnEncabezado": {
+    "Escritorio": 10,
+    "Movil": 10
+  },
+  "iniciadoresBATProbados": [
+    "Escritorio -NoAbrir: OK",
+    "Movil -NoAbrir: OK"
+  ],
+  "scriptsPowerShellSintaxis": "OK"
+}

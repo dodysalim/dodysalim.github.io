@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 12,
+    "y": 2102,
+    "width": 299,
+    "height": 70,
+    "z": 12,
+    "tabOrder": 12
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "DODY DUEÑAS",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "11pt",
+                    "color": "#FFFFFF",
+                    "fontWeight": "bold"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "DATA ANALYTICS  ·  HENRY M3",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "9pt",
+                    "color": "#9CB8CD",
+                    "fontWeight": "normal"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "visualContainerObjects": {
+    "background": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#0B1830'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

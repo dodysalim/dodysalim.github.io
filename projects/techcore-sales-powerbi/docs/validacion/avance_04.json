@@ -1,0 +1,190 @@
+{
+  "archivosPBIRValidados": 495,
+  "erroresEsquema": [],
+  "archivosHistoricosIntactos": 866,
+  "paginas": [
+    {
+      "vista": "Escritorio",
+      "pagina": "Inicio",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Resumen",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Geografía",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Productos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Clientes",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Vendedores",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Tiempo",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Pagos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Cruces",
+      "moviles": 14,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Escritorio",
+      "pagina": "Conclusiones",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Inicio",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Resumen",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Geografía",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Productos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Clientes",
+      "moviles": 13,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Vendedores",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Tiempo",
+      "moviles": 11,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Pagos",
+      "moviles": 12,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Cruces",
+      "moviles": 14,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    },
+    {
+      "vista": "Movil",
+      "pagina": "Conclusiones",
+      "moviles": 5,
+      "limitesCorrectos": true,
+      "sinSolapamientosMoviles": true,
+      "logotipoOriginalPresente": true
+    }
+  ],
+  "plantillas": [
+    {
+      "vista": "Escritorio",
+      "archivo": "TechCore_Escritorio_Avance_4.pbit",
+      "bytes": 294615,
+      "sha256": "25672b45b8690feeb6d1dd75ff3f8345e7c74ec442bd25c888b243c6709845a2",
+      "modeloMedidasRelacionesRolesConservados": true,
+      "definicionesSincronizadas": true,
+      "recursosPresentes": true
+    },
+    {
+      "vista": "Movil",
+      "archivo": "TechCore_Movil_Avance_4.pbit",
+      "bytes": 261780,
+      "sha256": "3239fe20b5381252975f7312b2f9d6a3c47ce4adfbda50e31a1181a92ee4d86f",
+      "modeloMedidasRelacionesRolesConservados": true,
+      "definicionesSincronizadas": true,
+      "recursosPresentes": true
+    }
+  ],
+  "revisionEnPowerBIDesktop": "Capturas nativas disponibles con la instantanea del PBIX original; actualizacion de fuentes, Azure Maps autenticado y RLS publicado pendientes",
+  "revisionEnTelefono": "Pendiente en Power BI Mobile",
+  "comparacionVisual": "comparacion/procedencia.json"
+}

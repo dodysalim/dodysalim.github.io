@@ -1,0 +1,63 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 12,
+    "y": 166,
+    "width": 299,
+    "height": 195,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "Ventas claras.\nDecisiones con contexto.",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "23pt",
+                    "color": "#14243B",
+                    "fontWeight": "bold"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "Ventas, clientes, productos y desempeño comercial en una vista completa.",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "12pt",
+                    "color": "#64748B",
+                    "fontWeight": "normal"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "Toca una sección para comenzar.",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "12pt",
+                    "color": "#2557E0",
+                    "fontWeight": "bold"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

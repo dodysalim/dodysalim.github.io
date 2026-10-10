@@ -1,0 +1,130 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0,
+      1
+    ],
+    "Category": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "dCalendario.AñoMes",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "VentasTotales",
+        "Name": "_Medidas.VentasTotales",
+        "Type": 3,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "Ventas PY (Año Anterior)",
+        "Name": "_Medidas.Ventas PY (Año Anterior)",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "AñoMes",
+        "Name": "dCalendario.AñoMes",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "VentasTotales",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "_Medidas.VentasTotales",
+      "roles": {
+        "Y": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "VentasTotales"
+        }
+      }
+    },
+    {
+      "displayName": "Ventas PY (Año Anterior)",
+      "format": "0",
+      "queryName": "_Medidas.Ventas PY (Año Anterior)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "Ventas PY (Año Anterior)"
+        }
+      }
+    },
+    {
+      "displayName": "AñoMes",
+      "queryName": "dCalendario.AñoMes",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "dCalendario"
+            }
+          },
+          "Property": "AñoMes"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "projectionOrdering": {
+    "Values": [
+      0
+    ],
+    "Group": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Group": [
+      {
+        "queryRef": "Productos.MarcaProducto",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "VentasTotales",
+        "Name": "_Medidas.VentasTotales",
+        "Type": 3,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      },
+      {
+        "Restatement": "MarcaProducto",
+        "Name": "Productos.MarcaProducto",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Group",
+          "Projection": 1,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "VentasTotales",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "_Medidas.VentasTotales",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "VentasTotales"
+        }
+      }
+    },
+    {
+      "displayName": "MarcaProducto",
+      "queryName": "Productos.MarcaProducto",
+      "roles": {
+        "Group": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Productos"
+            }
+          },
+          "Property": "MarcaProducto"
+        }
+      }
+    }
+  ]
+}

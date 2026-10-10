@@ -1,0 +1,256 @@
+{
+  "name": "13b494ef97e9bb361b23",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1088,
+        "y": 628,
+        "z": 5000,
+        "width": 484,
+        "height": 320,
+        "tabOrder": 5000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "columnChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "_Medidas.VentasTotales"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Sucursales.Jerarquía de Ubicación.NombreCiudad_Rel",
+          "active": true
+        },
+        {
+          "queryRef": "Sucursales.Jerarquía de Ubicación.SucursalNombre",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "_",
+          "Entity": "_Medidas",
+          "Type": 0
+        },
+        {
+          "Name": "s",
+          "Entity": "Sucursales",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "_"
+              }
+            },
+            "Property": "VentasTotales"
+          },
+          "Name": "_Medidas.VentasTotales",
+          "NativeReferenceName": "VentasTotales"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Hierarchy": "Jerarquía de Ubicación"
+              }
+            },
+            "Level": "NombreCiudad_Rel"
+          },
+          "Name": "Sucursales.Jerarquía de Ubicación.NombreCiudad_Rel",
+          "NativeReferenceName": "Jerarquía de Ubicación NombreCiudad_Rel"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Hierarchy": "Jerarquía de Ubicación"
+              }
+            },
+            "Level": "SucursalNombre"
+          },
+          "Name": "Sucursales.Jerarquía de Ubicación.SucursalNombre",
+          "NativeReferenceName": "Jerarquía de Ubicación SucursalNombre"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "HierarchyLevel": {
+              "Expression": {
+                "Hierarchy": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Hierarchy": "Jerarquía de Ubicación"
+                }
+              },
+              "Level": "NombreCiudad_Rel"
+            }
+          }
+        },
+        {
+          "Direction": 1,
+          "Expression": {
+            "HierarchyLevel": {
+              "Expression": {
+                "Hierarchy": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Hierarchy": "Jerarquía de Ubicación"
+                }
+              },
+              "Level": "SucursalNombre"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ventas Totales po Ciudad_Rel y Sucursal'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#172641'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E3E9F2'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "objects": {}
+  }
+}

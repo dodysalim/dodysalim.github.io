@@ -1,0 +1,134 @@
+{
+  "projectionOrdering": {
+    "Rows": [
+      0
+    ],
+    "Columns": [
+      1
+    ],
+    "Values": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "Vendedores.VendedorNombre",
+        "suppressConcat": false
+      }
+    ],
+    "Columns": [
+      {
+        "queryRef": "Ciudades.NombreCiudad",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "VendedorNombre",
+        "Name": "Vendedores.VendedorNombre",
+        "Type": 2048
+      },
+      {
+        "Restatement": "NombreCiudad",
+        "Name": "Ciudades.NombreCiudad",
+        "Type": 2048
+      },
+      {
+        "Restatement": "VentasTotales",
+        "Name": "_Medidas.VentasTotales",
+        "Type": 3,
+        "Format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Columns",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "VendedorNombre",
+      "queryName": "Vendedores.VendedorNombre",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Vendedores"
+            }
+          },
+          "Property": "VendedorNombre"
+        }
+      }
+    },
+    {
+      "displayName": "NombreCiudad",
+      "queryName": "Ciudades.NombreCiudad",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Ciudades"
+            }
+          },
+          "Property": "NombreCiudad"
+        }
+      }
+    },
+    {
+      "displayName": "VentasTotales",
+      "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+      "queryName": "_Medidas.VentasTotales",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "VentasTotales"
+        }
+      }
+    }
+  ]
+}

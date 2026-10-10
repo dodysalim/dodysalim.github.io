@@ -1,0 +1,142 @@
+[
+    {
+        "Fecha":  "2026-10-09T22:09:30.7407110-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Tiempo",
+        "Archivo":  "comparacion/capturas/escritorio/07-tiempo.png",
+        "Indice":  7
+    },
+    {
+        "Fecha":  "2026-10-09T22:09:20.9794317-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Vendedores",
+        "Archivo":  "comparacion/capturas/escritorio/06-vendedores.png",
+        "Indice":  6
+    },
+    {
+        "Fecha":  "2026-10-09T22:09:40.4450161-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Pagos",
+        "Archivo":  "comparacion/capturas/escritorio/08-pagos.png",
+        "Indice":  8
+    },
+    {
+        "Fecha":  "2026-10-09T22:09:59.3984896-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Conclusiones",
+        "Archivo":  "comparacion/capturas/escritorio/10-conclusiones.png",
+        "Indice":  10
+    },
+    {
+        "Fecha":  "2026-10-09T22:09:50.0595533-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Cruces",
+        "Archivo":  "comparacion/capturas/escritorio/09-cruces.png",
+        "Indice":  9
+    },
+    {
+        "Fecha":  "2026-10-09T22:08:42.8744350-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Resumen",
+        "Archivo":  "comparacion/capturas/escritorio/02-resumen.png",
+        "Indice":  2
+    },
+    {
+        "Fecha":  "2026-10-09T22:08:33.6646758-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Inicio",
+        "Archivo":  "comparacion/capturas/escritorio/01-inicio.png",
+        "Indice":  1
+    },
+    {
+        "Fecha":  "2026-10-09T22:08:52.2719360-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Geografía",
+        "Archivo":  "comparacion/capturas/escritorio/03-geografia.png",
+        "Indice":  3
+    },
+    {
+        "Fecha":  "2026-10-09T22:09:11.3272289-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Clientes",
+        "Archivo":  "comparacion/capturas/escritorio/05-clientes.png",
+        "Indice":  5
+    },
+    {
+        "Fecha":  "2026-10-09T22:09:01.7882256-05:00",
+        "Tipo":  "captura real de la ventana Power BI",
+        "Region":  {
+                       "Y":  0,
+                       "Ancho":  1366,
+                       "Alto":  728,
+                       "X":  0
+                   },
+        "Vista":  "Escritorio",
+        "Pagina":  "Productos",
+        "Archivo":  "comparacion/capturas/escritorio/04-productos.png",
+        "Indice":  4
+    }
+]

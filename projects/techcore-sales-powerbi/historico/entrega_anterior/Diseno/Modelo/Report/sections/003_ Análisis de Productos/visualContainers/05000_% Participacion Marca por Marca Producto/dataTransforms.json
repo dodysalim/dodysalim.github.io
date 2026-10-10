@@ -1,0 +1,94 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Category": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Productos.MarcaProducto",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "% Participacion Marca",
+        "Name": "_Medidas.% Participacion Marca",
+        "Type": 1
+      },
+      {
+        "Restatement": "MarcaProducto",
+        "Name": "Productos.MarcaProducto",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "% Participacion Marca",
+      "queryName": "_Medidas.% Participacion Marca",
+      "roles": {
+        "Y": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "% Participacion Marca"
+        }
+      }
+    },
+    {
+      "displayName": "MarcaProducto",
+      "queryName": "Productos.MarcaProducto",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Productos"
+            }
+          },
+          "Property": "MarcaProducto"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 8,
+    "y": 550,
+    "width": 307,
+    "height": 401,
+    "z": 3,
+    "tabOrder": 3
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "Recomendaciones Estratégicas",
+                  "textStyle": {
+                    "fontSize": "16pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "ACCIÓN INMEDIATA:",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": " Fomentar activamente el pago con \"Billetera Digital\" y \"Transferencia\" en tienda para ",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": "elevar el Ticket Promedio general",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": ".",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                }
+              ],
+              "listType": "ordered",
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "OPTIMIZACIÓN INTERNA:",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": " Replicar las prácticas de éxito de los ",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": "Vendedores Top 10",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": " (identificados en Pág. 5) en toda la fuerza de ventas.",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                }
+              ],
+              "listType": "ordered",
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "CRECIMIENTO:",
+                  "textStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                },
+                {
+                  "value": " Potenciar el marketing en mercados secundarios (Cali, Pereíra) y evaluar su expansión.",
+                  "textStyle": {
+                    "fontSize": "12pt",
+                    "fontFamily": "Segoe UI",
+                    "color": "#172641"
+                  }
+                }
+              ],
+              "listType": "ordered",
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "12pt",
+                    "color": "#172641"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

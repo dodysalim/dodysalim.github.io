@@ -1,0 +1,31 @@
+# Archivos locales y generados por los iniciadores
+.local/
+Generado/
+**/Generado/
+**/.pbi/
+**/Ubicacion_*.json
+**/ubicacion_*.json
+
+# Informes guardados localmente: conservar las entregas históricas
+*.pbix
+!historico/entrega_anterior/Avances/Avance_1/*.pbix
+!historico/entrega_anterior/Avances/Avance_3/*.pbix
+
+# Entorno y cachés
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.env
+.env.*
+
+# Temporales y paquetes de distribución
+*.log
+*.tmp
+*.bak
+*.zip
+Thumbs.db
+.DS_Store

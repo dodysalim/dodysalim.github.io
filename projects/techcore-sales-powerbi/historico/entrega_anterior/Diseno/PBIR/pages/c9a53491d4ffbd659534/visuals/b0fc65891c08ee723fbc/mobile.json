@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainerMobileState/2.4.0/schema.json",
+  "position": {
+    "x": 8,
+    "y": 72,
+    "width": 307,
+    "height": 62,
+    "z": 1,
+    "tabOrder": 1
+  },
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "paragraphs": [
+            {
+              "textRuns": [
+                {
+                  "value": "Pagos",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "20pt",
+                    "color": "#172641",
+                    "fontWeight": "bold"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            },
+            {
+              "textRuns": [
+                {
+                  "value": "HENRY M3  /  Vista móvil",
+                  "textStyle": {
+                    "fontFamily": "Segoe UI",
+                    "fontSize": "10pt",
+                    "color": "#64748B",
+                    "fontWeight": "normal"
+                  }
+                }
+              ],
+              "horizontalTextAlignment": "left"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

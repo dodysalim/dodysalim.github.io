@@ -1,0 +1,639 @@
+{
+  "generado": "2026-10-09T22:22:52.051528-05:00",
+  "aplicacion": "Power BI Desktop",
+  "tipoMovil": "Previsualizacion en PC; no telefono",
+  "pantalla": [
+    1366,
+    768
+  ],
+  "modelo": "Instantanea del PBIX original; fuentes no actualizadas para las capturas",
+  "original": {
+    "archivo": "historico/entrega_anterior/Avances/Avance_3/Avance_3_Dashboard_PowerBI.pbix",
+    "sha256": "85519c35cb120a2d9e5580c7d5aaf044c145bb02e1a69f6144df964a5db59a01",
+    "dataModelSha256": "05bbc5f5efe3195f9152737663df13ca22db0427b3fa66ee4614169051248138",
+    "paginas": 10
+  },
+  "copiasComparacion": [
+    {
+      "informeTemporal": "TechCore_Anterior.pbix",
+      "dataModelSha256": "05bbc5f5efe3195f9152737663df13ca22db0427b3fa66ee4614169051248138",
+      "mismaInstantanea": true
+    },
+    {
+      "informeTemporal": "TechCore_Escritorio_Comparacion.pbix",
+      "dataModelSha256": "05bbc5f5efe3195f9152737663df13ca22db0427b3fa66ee4614169051248138",
+      "mismaInstantanea": true
+    },
+    {
+      "informeTemporal": "TechCore_Movil_Comparacion.pbix",
+      "dataModelSha256": "05bbc5f5efe3195f9152737663df13ca22db0427b3fa66ee4614169051248138",
+      "mismaInstantanea": true
+    }
+  ],
+  "limitaciones": [
+    "Azure Maps solicita autenticacion",
+    "RLS publicado y telefono pendientes de revision"
+  ],
+  "capturas": [
+    {
+      "Fecha": "2026-10-09T22:03:46.5300298-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Portada",
+      "Archivo": "comparacion/capturas/original/01-inicio.png",
+      "Indice": 1,
+      "sha256": "032fff74cd0b3033857e7a9d93ddf364bf236f847e817d5f0101bce48dd37d6d"
+    },
+    {
+      "Fecha": "2026-10-09T22:03:53.2414176-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Resumen Ejecutivo",
+      "Archivo": "comparacion/capturas/original/02-resumen.png",
+      "Indice": 2,
+      "sha256": "ded18cf5e4b7d0a63e8ecda803663dc3a57c23cdc62db594ededf1f04fde91cd"
+    },
+    {
+      "Fecha": "2026-10-09T22:04:00.0510477-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis Geográfico",
+      "Archivo": "comparacion/capturas/original/03-geografia.png",
+      "Indice": 3,
+      "sha256": "7535ecb67551364e0091d5e3ee4a23f8c615a13cee46bc54fe5b109d281e13e8"
+    },
+    {
+      "Fecha": "2026-10-09T22:04:20.7910540-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis de Vendedores",
+      "Archivo": "comparacion/capturas/original/06-vendedores.png",
+      "Indice": 6,
+      "sha256": "59ce35b3c47c5c9ced5da2abb75848e33062a37c0cba1f2d9274c44e04ab26e3"
+    },
+    {
+      "Fecha": "2026-10-09T22:04:27.6614146-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis Temporal",
+      "Archivo": "comparacion/capturas/original/07-tiempo.png",
+      "Indice": 7,
+      "sha256": "250bf63f4eeb3b23d47f7dccde1dd93151205c1c0bda1ad0de2cfeab56e09a12"
+    },
+    {
+      "Fecha": "2026-10-09T22:04:34.3839240-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis de Métodos de Pago y Descuentos",
+      "Archivo": "comparacion/capturas/original/08-pagos.png",
+      "Indice": 8,
+      "sha256": "da9c068515ebcab448c402220c27f61a1ff0262a8fb774485010bb377b09cd9e"
+    },
+    {
+      "Fecha": "2026-10-09T22:04:41.1602976-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis Cruzado",
+      "Archivo": "comparacion/capturas/original/09-cruces.png",
+      "Indice": 9,
+      "sha256": "3bcd6f0a628ed202b498c8a9ea73913fa2bc86c5f966ef6a0c592bed614a01e4"
+    },
+    {
+      "Fecha": "2026-10-09T22:04:47.8818545-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Conclusiones",
+      "Archivo": "comparacion/capturas/original/10-conclusiones.png",
+      "Indice": 10,
+      "sha256": "3311c1b00bf9d77b63c34f36e46cfa6d730afabefa7b9a37dd6012c30d6738c8"
+    },
+    {
+      "Fecha": "2026-10-09T22:08:10.3505614-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis de Productos",
+      "Archivo": "comparacion/capturas/original/04-productos.png",
+      "Indice": 4,
+      "sha256": "04f75ed5ab49dc75020e47b6e636a7777e8bbca6a8c0d997aed1b1606fa4cef0"
+    },
+    {
+      "Fecha": "2026-10-09T22:08:19.6417734-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Original",
+      "Pagina": "Análisis de Clientes",
+      "Archivo": "comparacion/capturas/original/05-clientes.png",
+      "Indice": 5,
+      "sha256": "9585f9c0863ffc6382a17e43add75123db1f67c8931df753244215f98ba0461d"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:30.7407110-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Tiempo",
+      "Archivo": "comparacion/capturas/escritorio/07-tiempo.png",
+      "Indice": 7,
+      "sha256": "7086354e8b31cef378c24784618d1560d20640a18617f82a51c0b863e1f560bc"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:20.9794317-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Vendedores",
+      "Archivo": "comparacion/capturas/escritorio/06-vendedores.png",
+      "Indice": 6,
+      "sha256": "c38ee762005b0e17583f9be43ddeb767a152b84a5a9a40e4bddb8df51e005ad7"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:40.4450161-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Pagos",
+      "Archivo": "comparacion/capturas/escritorio/08-pagos.png",
+      "Indice": 8,
+      "sha256": "d80850ed118996dddb6dbde8768ca564411240ec86b6071994b41570c7fa2e7d"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:59.3984896-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Conclusiones",
+      "Archivo": "comparacion/capturas/escritorio/10-conclusiones.png",
+      "Indice": 10,
+      "sha256": "236b1eee8b61905afe10835b7e4930fccbd027fadbb26dc11c340b668eec5dd3"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:50.0595533-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Cruces",
+      "Archivo": "comparacion/capturas/escritorio/09-cruces.png",
+      "Indice": 9,
+      "sha256": "4128911d803a9f06b3a793d5a1c74f0894f8cf5df10960c52783ec76690f18ab"
+    },
+    {
+      "Fecha": "2026-10-09T22:08:42.8744350-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Resumen",
+      "Archivo": "comparacion/capturas/escritorio/02-resumen.png",
+      "Indice": 2,
+      "sha256": "19537eee6f1ad779636b032d23ca942e23f35c3d83269debee56c2c468cc2dbe"
+    },
+    {
+      "Fecha": "2026-10-09T22:08:33.6646758-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Inicio",
+      "Archivo": "comparacion/capturas/escritorio/01-inicio.png",
+      "Indice": 1,
+      "sha256": "5b4fee76d47985caf333c5bb6f9a314d233879d18f7319b419fac7c0d2202854"
+    },
+    {
+      "Fecha": "2026-10-09T22:08:52.2719360-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Geografía",
+      "Archivo": "comparacion/capturas/escritorio/03-geografia.png",
+      "Indice": 3,
+      "sha256": "690406b3d011e2024de3b8620434fda20f9d51e8cfe5b7ccbb55c1920996481b"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:11.3272289-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Clientes",
+      "Archivo": "comparacion/capturas/escritorio/05-clientes.png",
+      "Indice": 5,
+      "sha256": "6c71abd43682bdd78911d19f27f3ab0b35363205463dff30079785aa36b2e857"
+    },
+    {
+      "Fecha": "2026-10-09T22:09:01.7882256-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Escritorio",
+      "Pagina": "Productos",
+      "Archivo": "comparacion/capturas/escritorio/04-productos.png",
+      "Indice": 4,
+      "sha256": "7314a1f0d368efa32aa7b1f6d82190bfe8b5f183f4ea3102263e53eb2f27af46"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:05.3356930-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Tiempo",
+      "Archivo": "comparacion/capturas/movil/07-tiempo-vista-completa.png",
+      "Indice": 7,
+      "sha256": "81a11a326124bb1aa090af129e4a83ada687762b251e313fb26b9ecc0a89635d"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:14.5479455-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Pagos",
+      "Archivo": "comparacion/capturas/movil/08-pagos.png",
+      "Indice": 8,
+      "sha256": "d982c6c802e77c59b06c57e69bb6aef025588944482d2f06031b0262d9845042"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:02.8100513-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Tiempo",
+      "Archivo": "comparacion/capturas/movil/07-tiempo.png",
+      "Indice": 7,
+      "sha256": "632ada52fd2ad6c3f21253575cfa4eb443b48e82d86ae7dc77129878cc07cd3b"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:50.9498207-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Vendedores",
+      "Archivo": "comparacion/capturas/movil/06-vendedores.png",
+      "Indice": 6,
+      "sha256": "641ba9be96b6f1bc201e26c95a1c51d0da63050829f342fad870e9b00fc70b39"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:53.4589726-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Vendedores",
+      "Archivo": "comparacion/capturas/movil/06-vendedores-vista-completa.png",
+      "Indice": 6,
+      "sha256": "63a8614840068ed49748d9e22c2d5c242412370e3fed850ca60171fe19147a4e"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:38.0307094-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Conclusiones",
+      "Archivo": "comparacion/capturas/movil/10-conclusiones.png",
+      "Indice": 10,
+      "sha256": "cae74d5dfdb1b631e1e50e3799fa661bc599021dc7129599389a35fd06566150"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:40.5100679-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Conclusiones",
+      "Archivo": "comparacion/capturas/movil/10-conclusiones-vista-completa.png",
+      "Indice": 10,
+      "sha256": "a3f04726b24e506f5e868248592b20ade4f73c8f5be9ed424952625a9aff892c"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:28.7816609-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Cruces",
+      "Archivo": "comparacion/capturas/movil/09-cruces-vista-completa.png",
+      "Indice": 9,
+      "sha256": "da20c806280b70166210d9316d47e72ded697d054ed4e150271bdcd605a052b8"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:17.0410674-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Pagos",
+      "Archivo": "comparacion/capturas/movil/08-pagos-vista-completa.png",
+      "Indice": 8,
+      "sha256": "ff1bd4f8b0af60fcb57cb0b0f927b08fd515884c0d355f58370622ab018d95ff"
+    },
+    {
+      "Fecha": "2026-10-09T22:20:26.2419280-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Cruces",
+      "Archivo": "comparacion/capturas/movil/09-cruces.png",
+      "Indice": 9,
+      "sha256": "fde3e18028891cd6edf87305944916f8321b73240a9f1b9ed1a40c8e782196ed"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:06.5592195-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Resumen",
+      "Archivo": "comparacion/capturas/movil/02-resumen-vista-completa.png",
+      "Indice": 2,
+      "sha256": "1668fd48415805bacfa4973b16609673a318de0aad30b4c894f5df7d553d2973"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:15.6583092-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Geografía",
+      "Archivo": "comparacion/capturas/movil/03-geografia.png",
+      "Indice": 3,
+      "sha256": "263e57fdbb6a0ad4e4ad5d5f0a0e5f80a616dc362e2f96f47ddd632ce7e1fc99"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:03.9967313-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Resumen",
+      "Archivo": "comparacion/capturas/movil/02-resumen.png",
+      "Indice": 2,
+      "sha256": "e61ed95d172552e34c8f722dcba7c4694c1ac4837e826239df10d37c12e9b632"
+    },
+    {
+      "Fecha": "2026-10-09T22:18:50.9245382-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Inicio",
+      "Archivo": "comparacion/capturas/movil/01-inicio.png",
+      "Indice": 1,
+      "sha256": "47ab8ed3cc4c2bf83eaed201031f216e598e70c537c1462df3e39c160668345c"
+    },
+    {
+      "Fecha": "2026-10-09T22:18:54.0204081-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Inicio",
+      "Archivo": "comparacion/capturas/movil/01-inicio-vista-completa.png",
+      "Indice": 1,
+      "sha256": "7872c97a61d81ebed87b1bcd216f1f843f6a7c4178cdff9fa5919a9c61126bfc"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:39.0946059-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Clientes",
+      "Archivo": "comparacion/capturas/movil/05-clientes.png",
+      "Indice": 5,
+      "sha256": "3799dc15abb414cf1a3023f04272c70c1cfc6d923c651d3ba15cf2ff98602352"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:41.6016227-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Clientes",
+      "Archivo": "comparacion/capturas/movil/05-clientes-vista-completa.png",
+      "Indice": 5,
+      "sha256": "d64fac2fb0c68d0c69035109de2dbac6a544050e50ac8aedf49c99a3c7052891"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:29.8971433-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Productos",
+      "Archivo": "comparacion/capturas/movil/04-productos-vista-completa.png",
+      "Indice": 4,
+      "sha256": "0d60eb686ab0364eef4cbc9811278b10d62df6a821dc84ef68a9aa193bfeeb2f"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:18.1695601-05:00",
+      "Tipo": "captura real ajustada a pagina para documentar la estructura",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Geografía",
+      "Archivo": "comparacion/capturas/movil/03-geografia-vista-completa.png",
+      "Indice": 3,
+      "sha256": "c8a95b51b4f3f9f93df0253c1c358ba9d0b860948c0c4f84fd8eac80ea2bd8fc"
+    },
+    {
+      "Fecha": "2026-10-09T22:19:27.3868342-05:00",
+      "Tipo": "captura real de la ventana Power BI",
+      "Region": {
+        "Y": 0,
+        "Ancho": 1366,
+        "Alto": 728,
+        "X": 0
+      },
+      "Vista": "Movil",
+      "Pagina": "Productos",
+      "Archivo": "comparacion/capturas/movil/04-productos.png",
+      "Indice": 4,
+      "sha256": "a38179f7b96e69a3037e8251d01e9d0df0c6b821f5a093a3f79879276a396693"
+    }
+  ]
+}

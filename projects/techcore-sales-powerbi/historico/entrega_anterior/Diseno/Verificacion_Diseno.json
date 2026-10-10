@@ -1,0 +1,72 @@
+[
+  {
+    "page": "Inicio",
+    "visuals": 5,
+    "kpis": 0,
+    "charts": 0,
+    "filters": 0
+  },
+  {
+    "page": "Resumen",
+    "visuals": 12,
+    "kpis": 5,
+    "charts": 4,
+    "filters": 1
+  },
+  {
+    "page": "Geografía",
+    "visuals": 11,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 1
+  },
+  {
+    "page": "Productos",
+    "visuals": 11,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 1
+  },
+  {
+    "page": "Clientes",
+    "visuals": 12,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 2
+  },
+  {
+    "page": "Vendedores",
+    "visuals": 10,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 1
+  },
+  {
+    "page": "Tiempo",
+    "visuals": 10,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 1
+  },
+  {
+    "page": "Pagos",
+    "visuals": 11,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 1
+  },
+  {
+    "page": "Cruces",
+    "visuals": 13,
+    "kpis": 3,
+    "charts": 4,
+    "filters": 3
+  },
+  {
+    "page": "Conclusiones",
+    "visuals": 4,
+    "kpis": 0,
+    "charts": 0,
+    "filters": 0
+  }
+]

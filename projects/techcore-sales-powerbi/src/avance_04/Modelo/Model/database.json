@@ -1,0 +1,1724 @@
+{
+    "name":  "Avance_3_Dashboard_PowerBI",
+    "compatibilityLevel":  1567,
+    "model":  {
+                  "culture":  "es-MX",
+                  "dataAccessOptions":  {
+                                            "legacyRedirects":  true,
+                                            "returnErrorValuesAsNull":  true
+                                        },
+                  "defaultPowerBIDataSourceVersion":  "powerBI_V3",
+                  "sourceQueryCulture":  "es-EC",
+                  "tables":  [
+                                 {
+                                     "name":  "Ciudades",
+                                     "lineageTag":  "c5ab25a6-5f6b-442e-ba3c-c85a790f4d16",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "CiudadID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "CiudadID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "96127343-d1fe-4045-81e2-65d73ff9e47d",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "NombreCiudad",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "NombreCiudad",
+                                                         "lineageTag":  "47882ae9-8fe5-49b0-83e0-435b4c59e81a",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "Ciudades",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    Ciudades_Sheet = Origen{[Item=\"Ciudades\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Ciudades_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"CiudadID\", Int64.Type}, {\"NombreCiudad\", type text}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Clientes",
+                                     "lineageTag":  "403a7a86-51b3-4d4f-88c9-761c324d671a",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "ClienteID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "ClienteID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "7abd5db9-d8bc-447e-918c-e039fa1e0268",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "Cliente_Nombre",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "Cliente_Nombre",
+                                                         "lineageTag":  "f14bec91-21fa-4040-94e2-a7152db1b945",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "GeneroCliente",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "GeneroCliente",
+                                                         "lineageTag":  "991008ad-23c8-40b2-b317-6379f0cba42c",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "edadcliente",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "edadcliente",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "f1582f3e-b3e9-4e7b-8423-73bece72722e",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "EmailCliente",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "EmailCliente",
+                                                         "lineageTag":  "01b58bef-bc5b-4f7a-b710-92525156fc03",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "TelefonoCliente",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "TelefonoCliente",
+                                                         "lineageTag":  "1e80469e-8330-42f7-bca9-93c5919d6f30",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "Direccion_Cliente",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "Direccion_Cliente",
+                                                         "lineageTag":  "3f000b61-ba8f-4f11-9e91-dd8573649987",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculated",
+                                                         "name":  "Rango de Edad",
+                                                         "dataType":  "string",
+                                                         "isDataTypeInferred":  true,
+                                                         "expression":  [
+                                                                            "",
+                                                                            "SWITCH (",
+                                                                            "    TRUE (),",
+                                                                            "    Clientes[edadcliente] \u003c= 25, \"18-25\",",
+                                                                            "    Clientes[edadcliente] \u003c= 35, \"26-35\",",
+                                                                            "    Clientes[edadcliente] \u003c= 45, \"36-45\",",
+                                                                            "    Clientes[edadcliente] \u003c= 55, \"46-55\",",
+                                                                            "    \"56+\"",
+                                                                            ")",
+                                                                            ""
+                                                                        ],
+                                                         "lineageTag":  "39b85ede-cd33-4d13-a49d-a66d9a1b3a00",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "Clientes",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    Clientes_Sheet = Origen{[Item=\"Clientes\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Clientes_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"ClienteID\", Int64.Type}, {\"Cliente_Nombre\", type text}, {\"GeneroCliente\", type text}, {\"edadcliente\", Int64.Type}, {\"EmailCliente\", type text}, {\"TelefonoCliente\", type text}, {\"Direccion_Cliente\", type text}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "changedProperties":  [
+                                                               {
+                                                                   "property":  "IsHidden"
+                                                               }
+                                                           ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "DetalleFacturas",
+                                     "lineageTag":  "2b1c5d15-2761-420f-a904-c46643dacee7",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "DetalleID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "DetalleID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "7ab62954-b49c-4912-b085-646eec4b6f00",
+                                                         "summarizeBy":  "count",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "FacturaID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "FacturaID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "8487537f-4612-4f2e-9a45-0f94eed5b235",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "ProductoID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "ProductoID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "8b280368-4332-44b3-a0d9-cd61b5e41607",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "Cantidad",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "Cantidad",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "9a108483-d75d-448f-acad-14afc380f36f",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "PrecioUnitario",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "PrecioUnitario",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "f1172434-2642-4abc-a505-2f6ab66f029f",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "Subtotal",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "Subtotal",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "d9ba87fb-b807-44d5-969f-2e38f5b69aed",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "DetalleFacturas",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    DetalleFacturas_Sheet = Origen{[Item=\"DetalleFacturas\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(DetalleFacturas_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"DetalleID\", Int64.Type}, {\"FacturaID\", Int64.Type}, {\"ProductoID\", Int64.Type}, {\"Cantidad\", Int64.Type}, {\"PrecioUnitario\", Int64.Type}, {\"Subtotal\", Int64.Type}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Facturas",
+                                     "lineageTag":  "4d1820cf-284f-4215-b59c-c44befd50bc9",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "FacturaID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "FacturaID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "31fb16c6-161f-4781-a117-4dbe1cc66ac7",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "FechaVenta",
+                                                         "dataType":  "dateTime",
+                                                         "sourceColumn":  "FechaVenta",
+                                                         "formatString":  "Long Date",
+                                                         "lineageTag":  "7bbc82e4-dc97-41bc-a13e-ccb2934b1986",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             },
+                                                                             {
+                                                                                 "name":  "UnderlyingDateTimeDataType",
+                                                                                 "value":  "Date"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "HoraVenta",
+                                                         "dataType":  "dateTime",
+                                                         "sourceColumn":  "HoraVenta",
+                                                         "formatString":  "Long Time",
+                                                         "lineageTag":  "a8ac1a9d-cd59-467d-be38-3bdf8412652e",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             },
+                                                                             {
+                                                                                 "name":  "UnderlyingDateTimeDataType",
+                                                                                 "value":  "Time"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "SucursalID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "SucursalID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "7570b8f9-b508-44ef-b2e5-d78ba0261d31",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "ClienteID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "ClienteID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "44aebae9-20f1-4193-a886-4526c388d58f",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "VendedorID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "VendedorID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "e9d6d5b0-05d4-4e84-8290-a794309be528",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "MetodoPagoID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "MetodoPagoID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "119acffc-07fe-4d66-81f4-341da9dfbd2d",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "DescuentoVenta",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "DescuentoVenta",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "f27437b4-690b-41ba-a171-f4896acdf339",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "TotalVenta",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "TotalVenta",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "edd34ef0-11e9-4e0c-b848-dcbbff1df319",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "MesVenta",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "MesVenta",
+                                                         "lineageTag":  "b0ebd036-6795-4110-9cb2-e7bddb8bb6b6",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "MesNumero",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "MesNumero",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "9e2d68e0-58f3-4d0a-96a9-5e343e59645c",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "AñoVenta",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "AñoVenta",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "9bcab8b4-0a41-40d9-833e-0962dade2862",
+                                                         "summarizeBy":  "sum",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "Facturas",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    Facturas_Sheet = Origen{[Item=\"Facturas\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Facturas_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"FacturaID\", Int64.Type}, {\"FechaVenta\", type date}, {\"HoraVenta\", type time}, {\"SucursalID\", Int64.Type}, {\"ClienteID\", Int64.Type}, {\"VendedorID\", Int64.Type}, {\"MetodoPagoID\", Int64.Type}, {\"DescuentoVenta\", Int64.Type}, {\"TotalVenta\", Int64.Type}, {\"MesVenta\", type text}, {\"MesNumero\", Int64.Type}, {\"AñoVenta\", Int64.Type}}),",
+                                                                                              "    #\"Tipo cambiado con configuración regional\" = Table.TransformColumnTypes(#\"Tipo cambiado\", {{\"FechaVenta\", type date}}, \"es-EC\"),",
+                                                                                              "    #\"Tipo cambiado con configuración regional1\" = Table.TransformColumnTypes(#\"Tipo cambiado con configuración regional\", {{\"FechaVenta\", type date}}, \"es-EC\")",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado con configuración regional1\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         },
+                                                         {
+                                                             "name":  "PBI_NavigationStepName",
+                                                             "value":  "Navegación"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "MetodosPago",
+                                     "lineageTag":  "87575d9b-d555-43de-9625-958cbc9f1060",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "MetodoPagoID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "MetodoPagoID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "b8009aeb-c86a-494e-9c08-c6e9b4fb4338",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "TipoMetodoPago",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "TipoMetodoPago",
+                                                         "lineageTag":  "58f2a8ae-13c4-4910-8462-7072ff633b2a",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "MetodosPago",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    MetodosPago_Sheet = Origen{[Item=\"MetodosPago\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(MetodosPago_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"MetodoPagoID\", Int64.Type}, {\"TipoMetodoPago\", type text}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Productos",
+                                     "lineageTag":  "d4307195-b300-4504-9c8a-e6d7300b3475",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "ProductoID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "ProductoID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "3bbc8cdb-f66b-48e0-a443-86eb499710fa",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "NombreProducto",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "NombreProducto",
+                                                         "lineageTag":  "bfa3315c-98a3-40b6-a6dd-78aadca43833",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "MarcaProducto",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "MarcaProducto",
+                                                         "lineageTag":  "ee45dfa5-e816-4695-8f3e-b4dbcf5f523c",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "PrecioUnitario",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "PrecioUnitario",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "416abff2-01d5-4ce9-8a9b-6e1923fd0602",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "Productos",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    Productos_Sheet = Origen{[Item=\"Productos\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Productos_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"ProductoID\", Int64.Type}, {\"NombreProducto\", type text}, {\"MarcaProducto\", type text}, {\"PrecioUnitario\", Int64.Type}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Sucursales",
+                                     "lineageTag":  "d8ee0188-fca0-41c2-aefb-5b83db12819e",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "SucursalID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "SucursalID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "d99fef16-c1d6-4a67-86e5-1b4d7e302354",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "SucursalNombre",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "SucursalNombre",
+                                                         "lineageTag":  "c8d1798e-a046-4ae9-b690-e5373132b82e",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "CiudadID",
+                                                         "dataType":  "int64",
+                                                         "isHidden":  true,
+                                                         "sourceColumn":  "CiudadID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "dd6292f1-1f30-4a43-9d9c-3da9a5f296fe",
+                                                         "summarizeBy":  "none",
+                                                         "changedProperties":  [
+                                                                                   {
+                                                                                       "property":  "IsHidden"
+                                                                                   }
+                                                                               ],
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculated",
+                                                         "name":  "NombreCiudad_Rel",
+                                                         "dataType":  "string",
+                                                         "isDataTypeInferred":  true,
+                                                         "expression":  "RELATED(Ciudades[NombreCiudad])",
+                                                         "lineageTag":  "31389497-2e41-41f1-a372-fcd81549957c",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "Sucursales",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    Sucursales_Sheet = Origen{[Item=\"Sucursales\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Sucursales_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"SucursalID\", Int64.Type}, {\"SucursalNombre\", type text}, {\"CiudadID\", Int64.Type}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "hierarchies":  [
+                                                         {
+                                                             "name":  "Jerarquía de Ubicación",
+                                                             "lineageTag":  "8c26c9c2-d9dd-4264-9c77-8f8ca8a75ee4",
+                                                             "levels":  [
+                                                                            {
+                                                                                "name":  "NombreCiudad_Rel",
+                                                                                "ordinal":  0,
+                                                                                "column":  "NombreCiudad_Rel",
+                                                                                "lineageTag":  "73095689-92f5-4d58-8fa9-36ad740a2e00"
+                                                                            },
+                                                                            {
+                                                                                "name":  "SucursalNombre",
+                                                                                "ordinal":  1,
+                                                                                "column":  "SucursalNombre",
+                                                                                "lineageTag":  "d8d0b986-31be-4546-9128-065136e1882d"
+                                                                            }
+                                                                        ]
+                                                         }
+                                                     ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "Vendedores",
+                                     "lineageTag":  "7ae698e7-fdcd-4b53-8d74-49857ce8ee30",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "VendedorID",
+                                                         "dataType":  "int64",
+                                                         "sourceColumn":  "VendedorID",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "fe1425b5-766d-4f3d-9229-4452af8273ea",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "VendedorNombre",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "VendedorNombre",
+                                                         "lineageTag":  "1e611f87-b90a-438d-a782-7215d8b640b5",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "Vendedores",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\DODY DUEÑAS\\Downloads\\TechCore_Inicio_Automatico_Corregido\\TechCore\\Avances\\Avance_2\\modeloVentas.xlsx\"), null, true),",
+                                                                                              "    Vendedores_Sheet = Origen{[Item=\"Vendedores\",Kind=\"Sheet\"]}[Data],",
+                                                                                              "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Vendedores_Sheet, [PromoteAllScalars=true]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"VendedorID\", Int64.Type}, {\"VendedorNombre\", type text}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "dCalendario",
+                                     "lineageTag":  "b583b994-fc8b-4bbf-b42e-a8ccfca237bb",
+                                     "dataCategory":  "Time",
+                                     "columns":  [
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "Date",
+                                                         "dataType":  "dateTime",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "isKey":  true,
+                                                         "sourceColumn":  "[Date]",
+                                                         "formatString":  "d/m/yyyy",
+                                                         "lineageTag":  "ce2b4cdb-0015-43f7-a718-8b0f50a04e50",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             },
+                                                                             {
+                                                                                 "name":  "UnderlyingDateTimeDataType",
+                                                                                 "value":  "Date"
+                                                                             },
+                                                                             {
+                                                                                 "name":  "PBI_FormatHint",
+                                                                                 "value":  "{\"isDateTimeCustom\":true}"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "Año",
+                                                         "dataType":  "int64",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[Año]",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "443f9c11-b6c9-472b-83d1-26946104a9b2",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "MesNumero",
+                                                         "dataType":  "int64",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[MesNumero]",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "01526d74-7aff-404f-90be-bbefa5b77ef8",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "NombreMes",
+                                                         "dataType":  "string",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[NombreMes]",
+                                                         "lineageTag":  "64dce833-3eea-4bb3-ace4-7f4b14dc71db",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "Trimestre",
+                                                         "dataType":  "string",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[Trimestre]",
+                                                         "lineageTag":  "216eb1f9-15ef-46b1-b8a0-21b0522016fa",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "AñoTrimestre",
+                                                         "dataType":  "string",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[AñoTrimestre]",
+                                                         "lineageTag":  "c43cbc38-0f47-4f59-92c2-e5a74b4d833c",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "AñoMes",
+                                                         "dataType":  "string",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[AñoMes]",
+                                                         "lineageTag":  "a14bcfc2-8331-47cb-a6bb-c843556ef5c9",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "DiaSemana",
+                                                         "dataType":  "int64",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[DiaSemana]",
+                                                         "formatString":  "0",
+                                                         "lineageTag":  "9a6aad51-02cf-49d4-8bb8-b1f191867931",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "type":  "calculatedTableColumn",
+                                                         "name":  "NombreDia",
+                                                         "dataType":  "string",
+                                                         "isNameInferred":  true,
+                                                         "isDataTypeInferred":  true,
+                                                         "sourceColumn":  "[NombreDia]",
+                                                         "lineageTag":  "a6eb1e55-cb13-45b7-8167-1b5a77414e36",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "dCalendario",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "calculated",
+                                                                           "expression":  [
+                                                                                              "",
+                                                                                              "ADDCOLUMNS (",
+                                                                                              "    CALENDAR ( MIN ( Facturas[FechaVenta] ), MAX ( Facturas[FechaVenta] ) ),",
+                                                                                              "    \"Año\", YEAR ( [Date] ),",
+                                                                                              "    \"MesNumero\", MONTH ( [Date] ),",
+                                                                                              "    \"NombreMes\", FORMAT ( [Date], \"mmmm\" ),",
+                                                                                              "    \"Trimestre\", \"Q\" \u0026 FORMAT ( [Date], \"q\" ),",
+                                                                                              "    \"AñoTrimestre\", YEAR ( [Date] ) \u0026 \" Q\" \u0026 FORMAT ( [Date], \"q\" ),",
+                                                                                              "    \"AñoMes\", FORMAT ( [Date], \"yyyy-mm\" ),",
+                                                                                              "    \"DiaSemana\", WEEKDAY ( [Date], 2 ), // Lunes=1, Domingo=7",
+                                                                                              "    \"NombreDia\", FORMAT ( [Date], \"dddd\" )",
+                                                                                              ")"
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "hierarchies":  [
+                                                         {
+                                                             "name":  "Día",
+                                                             "lineageTag":  "1eb461c3-f292-47ea-81ff-f6568a28de77",
+                                                             "levels":  [
+                                                                            {
+                                                                                "name":  "Año",
+                                                                                "ordinal":  0,
+                                                                                "column":  "Año",
+                                                                                "lineageTag":  "31bce44a-d39e-421d-957d-d08bf2ffb5c8"
+                                                                            },
+                                                                            {
+                                                                                "name":  "NombreMes",
+                                                                                "ordinal":  1,
+                                                                                "column":  "NombreMes",
+                                                                                "lineageTag":  "3e404896-5552-42ee-be57-0e38acf01128"
+                                                                            },
+                                                                            {
+                                                                                "name":  "Date",
+                                                                                "ordinal":  2,
+                                                                                "column":  "Date",
+                                                                                "lineageTag":  "356f1e1f-ad30-4295-9a8a-d3e85b0d09ed"
+                                                                            }
+                                                                        ]
+                                                         }
+                                                     ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_Id",
+                                                             "value":  "a253e1bd01134ab7be326e95caffcef1"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "_Medidas",
+                                     "lineageTag":  "971568ab-4b70-44b3-992c-6012f22e0231",
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "_Medidas",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(Origen,{{\"Columna1\", type text}}),",
+                                                                                              "    #\"Columnas quitadas\" = Table.RemoveColumns(#\"Tipo cambiado\",{\"Columna1\"})",
+                                                                                              "in",
+                                                                                              "    #\"Columnas quitadas\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "measures":  [
+                                                      {
+                                                          "name":  "VentasTotales",
+                                                          "expression":  "SUM(Facturas[TotalVenta])",
+                                                          "formatString":  "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+                                                          "lineageTag":  "29dbdaa0-8f2e-4576-bbcd-3cd098b1500c"
+                                                      },
+                                                      {
+                                                          "name":  "TotalUnidadesVendidas",
+                                                          "expression":  "SUM(DetalleFacturas[Cantidad])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "135420dc-6ce2-4f81-870e-141bdf9f3cdd"
+                                                      },
+                                                      {
+                                                          "name":  "TotalFacturas",
+                                                          "expression":  "DISTINCTCOUNT(Facturas[FacturaID])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "37076b13-706d-488a-8918-30db667d3717"
+                                                      },
+                                                      {
+                                                          "name":  "TicketPromedio",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        [TotalFacturas],",
+                                                                             "        0",
+                                                                             "    )"
+                                                                         ],
+                                                          "formatString":  "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+                                                          "lineageTag":  "3b69df68-cceb-4ac2-93f4-3e83af6840b9"
+                                                      },
+                                                      {
+                                                          "name":  "PrecioPromedioPorUnidad",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        [TotalUnidadesVendidas],",
+                                                                             "        0",
+                                                                             "    )"
+                                                                         ],
+                                                          "lineageTag":  "27b01fa6-4e62-484b-b005-c6efd33dcf2e",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "TotalDescuento",
+                                                          "expression":  "SUM(Facturas[DescuentoVenta])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "b609513b-899c-4c1f-970c-a1c8a573fd43"
+                                                      },
+                                                      {
+                                                          "name":  "% Descuento Sobre Ventas",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [TotalDescuento],",
+                                                                             "        [VentasTotales] + [TotalDescuento], // Sobre el total antes de descuento",
+                                                                             "        0",
+                                                                             "    )"
+                                                                         ],
+                                                          "lineageTag":  "28f1caaf-6558-4501-9d89-12457598b5a0",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "CostoTotal (Simulado)",
+                                                          "expression":  [
+                                                                             "[VentasTotales] * 0.65",
+                                                                             ""
+                                                                         ],
+                                                          "lineageTag":  "9b29244a-11cf-4655-b12d-51ce395f080a",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "MargenBruto (Simulado)",
+                                                          "expression":  "[VentasTotales] - [CostoTotal (Simulado)]",
+                                                          "lineageTag":  "06a7394b-3591-40fa-9074-ecfb6b1f5c0b",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "% Margen (Simulado)",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [MargenBruto (Simulado)],",
+                                                                             "        [VentasTotales],",
+                                                                             "        0",
+                                                                             "    )"
+                                                                         ],
+                                                          "formatString":  "0.00\\ %;-0.00\\ %;0.00\\ %",
+                                                          "lineageTag":  "f42f37ee-fe51-4204-8a7a-cc4056dc39c3"
+                                                      },
+                                                      {
+                                                          "name":  "% Participacion Ciudad",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        CALCULATE(",
+                                                                             "            [VentasTotales],",
+                                                                             "            ALLSELECTED(Ciudades[NombreCiudad])",
+                                                                             "        )",
+                                                                             "    )",
+                                                                             ""
+                                                                         ],
+                                                          "lineageTag":  "86294b57-cc5c-4cc9-8b8b-22e2cae58178",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "% Participacion Marca",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        CALCULATE(",
+                                                                             "            [VentasTotales],",
+                                                                             "            ALLSELECTED(Productos[MarcaProducto])",
+                                                                             "        )",
+                                                                             "    )",
+                                                                             ""
+                                                                         ],
+                                                          "lineageTag":  "510ef01f-ba8f-4f26-89fc-f6d8968bc951",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "% Participacion MetodoPago",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        CALCULATE(",
+                                                                             "            [VentasTotales],",
+                                                                             "            ALLSELECTED(MetodosPago[TipoMetodoPago])",
+                                                                             "        )",
+                                                                             "    )"
+                                                                         ],
+                                                          "lineageTag":  "3f21d75b-c88b-4c1b-8ecf-7832ce20afd8",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "Ventas YTD (Año hasta la fecha)",
+                                                          "expression":  "TOTALYTD([VentasTotales], dCalendario[Date])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "0a92308d-0b91-4a89-8cd8-ca3e76865b54"
+                                                      },
+                                                      {
+                                                          "name":  "Ventas MTD (Mes hasta la fecha)",
+                                                          "expression":  "TOTALMTD([VentasTotales], dCalendario[Date])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "91881aea-b519-4164-a4ba-9a3c62b4eb87"
+                                                      },
+                                                      {
+                                                          "name":  "Ventas PY (Año Anterior)",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    CALCULATE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        SAMEPERIODLASTYEAR(dCalendario[Date])",
+                                                                             "    )",
+                                                                             ""
+                                                                         ],
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "c51477fe-9ba4-4768-80ed-564f3e0613f1"
+                                                      },
+                                                      {
+                                                          "name":  "Crecimiento Ventas % (vs PY)",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales] - [Ventas PY (Año Anterior)],",
+                                                                             "        [Ventas PY (Año Anterior)],",
+                                                                             "        BLANK()",
+                                                                             "    )"
+                                                                         ],
+                                                          "lineageTag":  "d77e32f4-14f6-4eaf-84a5-f31e0ea39f8c",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "Ventas PM (Mes Anterior)",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    CALCULATE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        DATEADD(dCalendario[Date], -1, MONTH)",
+                                                                             "    )"
+                                                                         ],
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "55e3ee65-3dfa-434f-b03c-0087e1320c0c"
+                                                      },
+                                                      {
+                                                          "name":  "Crecimiento Ventas % (vs PM)",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales] - [Ventas PM (Mes Anterior)],",
+                                                                             "        [Ventas PM (Mes Anterior)],",
+                                                                             "        BLANK()",
+                                                                             "    )",
+                                                                             ""
+                                                                         ],
+                                                          "lineageTag":  "a51898d7-e305-4931-a74d-75e1ffec8970",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "TotalClientes",
+                                                          "expression":  "DISTINCTCOUNT(Facturas[ClienteID])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "933f5cd5-d954-4d7d-926d-e7e697a0a96f"
+                                                      },
+                                                      {
+                                                          "name":  "VentasPromedioPorCliente",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        [TotalClientes],",
+                                                                             "        0",
+                                                                             "    )",
+                                                                             ""
+                                                                         ],
+                                                          "lineageTag":  "dfa135c7-5e88-4d1f-837c-02cee97daab6",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "TotalVendedores",
+                                                          "expression":  "DISTINCTCOUNT(Facturas[VendedorID])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "3e2f51e9-9423-4bab-8eee-ebb2cc5f1762"
+                                                      },
+                                                      {
+                                                          "name":  "VentasPromedioPorVendedor",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    DIVIDE(",
+                                                                             "        [VentasTotales],",
+                                                                             "        [TotalVendedores],",
+                                                                             "        0",
+                                                                             "    )",
+                                                                             ""
+                                                                         ],
+                                                          "lineageTag":  "20514d3d-a403-47f7-bb22-65f45a2902ca",
+                                                          "annotations":  [
+                                                                              {
+                                                                                  "name":  "PBI_FormatHint",
+                                                                                  "value":  "{\"isGeneralNumber\":true}"
+                                                                              }
+                                                                          ]
+                                                      },
+                                                      {
+                                                          "name":  "Ranking Marcas",
+                                                          "expression":  [
+                                                                             "",
+                                                                             "    RANKX(",
+                                                                             "        ALLSELECTED(Productos[MarcaProducto]),",
+                                                                             "        [VentasTotales],",
+                                                                             "        ,",
+                                                                             "        DESC,",
+                                                                             "        Dense",
+                                                                             "    )"
+                                                                         ],
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "a7fcfee6-b13a-4232-a9af-3dcf642ea981"
+                                                      },
+                                                      {
+                                                          "name":  "Total Sucursales",
+                                                          "expression":  "DISTINCTCOUNT(Sucursales[SucursalID])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "865f94b7-d545-48ce-9cd9-7c5aab7ee0e7"
+                                                      },
+                                                      {
+                                                          "name":  "Total Marcas",
+                                                          "expression":  "DISTINCTCOUNT(Productos[MarcaProducto])",
+                                                          "formatString":  "0",
+                                                          "lineageTag":  "41342bed-1689-4bed-9f44-8d38cea83b94"
+                                                      }
+                                                  ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 },
+                                 {
+                                     "name":  "UsuariosRLS",
+                                     "lineageTag":  "37ed4da7-9f0a-4b43-ba2c-9456e6d741c3",
+                                     "columns":  [
+                                                     {
+                                                         "name":  "UserEmail (UPN)",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "UserEmail (UPN)",
+                                                         "lineageTag":  "6c5ac613-b1c2-412f-bc66-e51f810647f1",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "RolAsignado",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "RolAsignado",
+                                                         "lineageTag":  "8add9ce7-5e3e-48f1-9cc9-8de11ee685ec",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "CiudadFiltro",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "CiudadFiltro",
+                                                         "lineageTag":  "4033c9c3-47b3-4d04-a2d7-6c7f3add1c59",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     },
+                                                     {
+                                                         "name":  "SucursalFiltro",
+                                                         "dataType":  "string",
+                                                         "sourceColumn":  "SucursalFiltro",
+                                                         "lineageTag":  "907b8a82-5ec7-472f-99d1-f8e9cc7ba2f8",
+                                                         "summarizeBy":  "none",
+                                                         "annotations":  [
+                                                                             {
+                                                                                 "name":  "SummarizationSetBy",
+                                                                                 "value":  "Automatic"
+                                                                             }
+                                                                         ]
+                                                     }
+                                                 ],
+                                     "partitions":  [
+                                                        {
+                                                            "name":  "UsuariosRLS",
+                                                            "mode":  "import",
+                                                            "source":  {
+                                                                           "type":  "m",
+                                                                           "expression":  [
+                                                                                              "let",
+                                                                                              "    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WSk8tSs0rSdXLS0zOzM9LzHEoSU3OSM4vStVLzs9V0lFyh8gr+EHlgUIgFKuD0JqUn55fkohLY1BqOkyjE0jh4YXo+nNTU1JzcjLziDDBF6z08No8dDOSE3MyidDvDFSGrrUASGcWEeP+AKDQ4bVFiegmFJcmwz1hiMuc4NLk0qJiWACGABU5AxUpwH2koGyIYSg+X+EwD+zD2FgA\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"UserEmail (UPN)\" = _t, RolAsignado = _t, CiudadFiltro = _t, SucursalFiltro = _t]),",
+                                                                                              "    #\"Tipo cambiado\" = Table.TransformColumnTypes(Origen,{{\"UserEmail (UPN)\", type text}, {\"RolAsignado\", type text}, {\"CiudadFiltro\", type text}, {\"SucursalFiltro\", type text}})",
+                                                                                              "in",
+                                                                                              "    #\"Tipo cambiado\""
+                                                                                          ]
+                                                                       }
+                                                        }
+                                                    ],
+                                     "annotations":  [
+                                                         {
+                                                             "name":  "PBI_ResultType",
+                                                             "value":  "Table"
+                                                         }
+                                                     ]
+                                 }
+                             ],
+                  "relationships":  [
+                                        {
+                                            "name":  "AutoDetected_6f730df1-817e-4ba4-bd13-b7491fa93883",
+                                            "fromTable":  "Sucursales",
+                                            "fromColumn":  "CiudadID",
+                                            "toTable":  "Ciudades",
+                                            "toColumn":  "CiudadID"
+                                        },
+                                        {
+                                            "name":  "AutoDetected_a8222a9e-6b2b-44d2-ba81-1158aa263c66",
+                                            "fromTable":  "Facturas",
+                                            "fromColumn":  "ClienteID",
+                                            "toTable":  "Clientes",
+                                            "toColumn":  "ClienteID"
+                                        },
+                                        {
+                                            "name":  "AutoDetected_3c5129c0-3526-4127-8734-b40225016fd0",
+                                            "fromTable":  "DetalleFacturas",
+                                            "fromColumn":  "FacturaID",
+                                            "toTable":  "Facturas",
+                                            "toColumn":  "FacturaID",
+                                            "crossFilteringBehavior":  "bothDirections"
+                                        },
+                                        {
+                                            "name":  "AutoDetected_50889e72-8e84-45ea-9153-43c2b503b3fd",
+                                            "fromTable":  "DetalleFacturas",
+                                            "fromColumn":  "ProductoID",
+                                            "toTable":  "Productos",
+                                            "toColumn":  "ProductoID"
+                                        },
+                                        {
+                                            "name":  "AutoDetected_b6fb06fb-79f4-4e3f-9e86-f7b5ff1a2273",
+                                            "fromTable":  "Facturas",
+                                            "fromColumn":  "SucursalID",
+                                            "toTable":  "Sucursales",
+                                            "toColumn":  "SucursalID"
+                                        },
+                                        {
+                                            "name":  "AutoDetected_fe692590-52bf-4a04-93c5-e86cb7469ea5",
+                                            "fromTable":  "Facturas",
+                                            "fromColumn":  "VendedorID",
+                                            "toTable":  "Vendedores",
+                                            "toColumn":  "VendedorID"
+                                        },
+                                        {
+                                            "name":  "AutoDetected_4af11a9e-ddd4-45dc-81de-ed13cf1d0e4c",
+                                            "fromTable":  "Facturas",
+                                            "fromColumn":  "MetodoPagoID",
+                                            "toTable":  "MetodosPago",
+                                            "toColumn":  "MetodoPagoID"
+                                        },
+                                        {
+                                            "name":  "95966fc9-f1ff-c3a6-fd9c-a24b1087b286",
+                                            "fromTable":  "Facturas",
+                                            "fromColumn":  "FechaVenta",
+                                            "toTable":  "dCalendario",
+                                            "toColumn":  "Date"
+                                        }
+                                    ],
+                  "cultures":  [
+                                   {
+                                       "name":  "es-MX",
+                                       "linguisticMetadata":  {
+                                                                  "content":  {
+                                                                                  "Version":  "1.0.0",
+                                                                                  "Language":  "en-US"
+                                                                              },
+                                                                  "contentType":  "json"
+                                                              }
+                                   }
+                               ],
+                  "roles":  [
+                                {
+                                    "name":  "Gerente Nacional",
+                                    "modelPermission":  "read",
+                                    "annotations":  [
+                                                        {
+                                                            "name":  "PBI_Id",
+                                                            "value":  "c7db073dd4914b3abea1bce8c2267bfb"
+                                                        }
+                                                    ]
+                                },
+                                {
+                                    "name":  "Gerente Regional",
+                                    "modelPermission":  "read",
+                                    "tablePermissions":  [
+                                                             {
+                                                                 "name":  "Ciudades",
+                                                                 "filterExpression":  [
+                                                                                          "[NombreCiudad] = ",
+                                                                                          "LOOKUPVALUE(",
+                                                                                          "    UsuariosRLS[CiudadFiltro],",
+                                                                                          "    UsuariosRLS[UserEmail (UPN)], USERPRINCIPALNAME(),",
+                                                                                          "    UsuariosRLS[RolAsignado], \"Gerente Regional\"",
+                                                                                          ")"
+                                                                                      ]
+                                                             }
+                                                         ],
+                                    "annotations":  [
+                                                        {
+                                                            "name":  "PBI_Id",
+                                                            "value":  "86978f5693c34aa796b4b7b5ac5da336"
+                                                        }
+                                                    ]
+                                },
+                                {
+                                    "name":  "Gerente Sucursal",
+                                    "modelPermission":  "read",
+                                    "tablePermissions":  [
+                                                             {
+                                                                 "name":  "Sucursales",
+                                                                 "filterExpression":  [
+                                                                                          "[SucursalNombre] = ",
+                                                                                          "LOOKUPVALUE(",
+                                                                                          "    UsuariosRLS[SucursalFiltro],",
+                                                                                          "    UsuariosRLS[UserEmail (UPN)], USERPRINCIPALNAME(),",
+                                                                                          "    UsuariosRLS[RolAsignado], \"Gerente Sucursal\"",
+                                                                                          ")"
+                                                                                      ]
+                                                             }
+                                                         ],
+                                    "annotations":  [
+                                                        {
+                                                            "name":  "PBI_Id",
+                                                            "value":  "b5f4f66b8ce345328882bccf3bba88e7"
+                                                        }
+                                                    ]
+                                }
+                            ],
+                  "annotations":  [
+                                      {
+                                          "name":  "__PBI_TimeIntelligenceEnabled",
+                                          "value":  "1"
+                                      },
+                                      {
+                                          "name":  "PBI_QueryOrder",
+                                          "value":  "[\"Ciudades\",\"Clientes\",\"DetalleFacturas\",\"Facturas\",\"MetodosPago\",\"Productos\",\"Sucursales\",\"Vendedores\",\"_Medidas\",\"UsuariosRLS\"]"
+                                      }
+                                  ]
+              }
+}

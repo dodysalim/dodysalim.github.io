@@ -1,0 +1,97 @@
+{
+  "projectionOrdering": {
+    "Rows": [
+      0
+    ],
+    "Columns": [
+      1
+    ],
+    "Values": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "Clientes.Rango de Edad",
+        "suppressConcat": false
+      }
+    ],
+    "Columns": [
+      {
+        "queryRef": "Productos.MarcaProducto",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": null,
+  "visualElements": null,
+  "selects": [
+    {
+      "displayName": "Rango de Edad",
+      "queryName": "Clientes.Rango de Edad",
+      "roles": {
+        "Rows": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Clientes"
+            }
+          },
+          "Property": "Rango de Edad"
+        }
+      }
+    },
+    {
+      "displayName": "MarcaProducto",
+      "queryName": "Productos.MarcaProducto",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Productos"
+            }
+          },
+          "Property": "MarcaProducto"
+        }
+      }
+    },
+    {
+      "displayName": "TotalUnidadesVendidas",
+      "format": "0",
+      "queryName": "_Medidas.TotalUnidadesVendidas",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "_Medidas"
+            }
+          },
+          "Property": "TotalUnidadesVendidas"
+        }
+      }
+    }
+  ]
+}

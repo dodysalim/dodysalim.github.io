@@ -1,0 +1,18 @@
+﻿NUEVO: incluye escritorio y diseño móvil en las diez páginas.
+Consulta LEEME_MOVIL.txt para revisarlo y usarlo en el teléfono.
+
+TECHCORE - DASHBOARD MEJORADO
+
+1. Extrae todo el ZIP.
+2. Entra en la carpeta TechCore y ejecuta INICIAR_TECHCORE.bat.
+3. El BAT adapta las rutas a tu carpeta, genera la plantilla mejorada y la abre en Power BI Desktop.
+4. Acepta los permisos de archivos locales si Power BI los solicita.
+5. Cuando cargue, guarda como TechCore_Dashboard_Mejorado.pbix.
+
+El dashboard mejorado corresponde al Avance 3. Tiene diez paginas, diseno Executive Studio, lienzo claro y navegacion lateral. Las medidas, tablas, relaciones, roles, filtros y consultas de origen se conservan.
+
+La primera ejecucion descarga pbi-tools Core y prepara .NET 8 desde las fuentes oficiales. No necesita administrador. Ya no utiliza el empaquetador de Power BI Desktop ni extrae el PBIX para compilar.
+
+La plantilla fue compilada y su estructura verificada. La apertura y la actualizacion final necesitan validacion en Power BI Desktop de Windows. El mapa requiere la conectividad y permisos habituales de Power BI.
+
+Avances/Avance_3/TechCore_Dashboard_Mejorado.pbit es una plantilla lista para revisar en el PC original. Para otra carpeta o computadora usa siempre el BAT. El PBIX original del Avance 3 se conserva como referencia.
