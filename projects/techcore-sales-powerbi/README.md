@@ -1,4 +1,30 @@
-<p align="center"><img src="assets/techcore-logo.png" alt="TechCore" width="440"></p>
+<p align="center"><img src="https://dodysalim.github.io/assets/project-covers/techcore.webp" alt="TechCore · Ventas" width="100%"></p>
+
+<h1 align="center">TechCore · Ventas</h1>
+
+<p align="center"><b>De ventas sin transformar a un modelo relacional y un informe de negocio en Power BI, para escritorio y móvil.</b></p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Henry_%C2%B7_M%C3%B3dulo_3_%C2%B7_Business_Intelligence-75E6CE?style=for-the-badge&labelColor=0b1222" alt="Henry · Módulo 3 · Business Intelligence">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logoColor=black" alt="Power BI"> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL"> <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logoColor=white" alt="Excel">
+</p>
+
+<p align="center"><a href="https://dodysalim.github.io/"><b>🌐 Portafolio</b></a> · <a href="docs/presentacion/TechCore_Evolucion_Dashboard.pdf"><b>📄 Presentación PDF</b></a> · <a href="docs/medidas-dax.md"><b>🧮 Medidas DAX</b></a></p>
+
+---
+
+## 📌 Resumen en 30 segundos
+
+| | |
+| --- | --- |
+| **🎯 Problema** | Analizar ventas por producto, cliente, vendedor, sucursal y tiempo sin perder el contexto de filtros. |
+| **🛠️ Solución** | Limpieza con Power Query y modelo relacional de 11 tablas y 8 relaciones. |
+| **📈 Entregables** | Informe de 10 páginas en dos versiones (escritorio y móvil), 26 medidas DAX y 3 roles de seguridad RLS. |
+| **🧪 Calidad** | Definiciones PBIR verificadas contra los esquemas oficiales de Microsoft. |
+| **👤 Autor** | Dody Dueñas Remache. |
 
 # TechCore · Análisis de ventas en Power BI
 
@@ -94,3 +120,10 @@ Las plantillas se compilan y sus definiciones PBIR se verifican contra esquemas 
 La apariencia se documenta mediante capturas nativas de Power BI Desktop con la instantánea de datos del informe original. La actualización de las fuentes, los mapas autenticados, los permisos RLS y la revisión en un teléfono siguen requiriendo comprobación en esas aplicaciones.
 
 Autor del informe: **Dody Salim Dueñas Remache**. Proyecto académico Henry M3. Esta reorganización conserva la documentación y atribuciones de la entrega anterior.
+
+---
+
+<p align="center">
+<b>Dody Dueñas Remache</b> · Analista de Datos / Data Scientist<br>
+<a href="https://dodysalim.github.io/">Portafolio</a> · <a href="https://github.com/dodysalim">GitHub</a> · <a href="https://www.linkedin.com/in/dody-duenas/">LinkedIn</a> · <a href="mailto:dodydurema67@gmail.com">dodydurema67@gmail.com</a>
+</p>

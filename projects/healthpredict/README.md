@@ -1,10 +1,30 @@
-# HealthPredict · Práctica Henry M4
+<p align="center"><img src="https://dodysalim.github.io/assets/project-covers/m4.webp" alt="HealthPredict" width="100%"></p>
 
-**Clasificación académica de riesgo con un pipeline reproducible y evaluación por paciente.**
+<h1 align="center">HealthPredict</h1>
 
-Python · pandas · scikit-learn · Regresión logística
+<p align="center"><b>Clasificación de riesgo con un pipeline reproducible y evaluación separada por paciente.</b></p>
 
-[Portafolio](https://dodysalim.github.io/) · [Notebook guiado](notebooks/HealthPredict.ipynb) · [Código](train.py)
+<p align="center">
+<img src="https://img.shields.io/badge/Henry_%C2%B7_M%C3%B3dulo_4_%C2%B7_Pr%C3%A1ctica-75E6CE?style=for-the-badge&labelColor=0b1222" alt="Henry · Módulo 4 · Práctica">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"> <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter">
+</p>
+
+<p align="center"><a href="https://dodysalim.github.io/"><b>🌐 Portafolio</b></a> · <a href="notebooks/HealthPredict.ipynb"><b>📓 Notebook guiado</b></a> · <a href="train.py"><b>🐍 Código</b></a></p>
+
+---
+
+## 📌 Resumen en 30 segundos
+
+| | |
+| --- | --- |
+| **🎯 Problema** | Evitar fuga de información cuando un mismo paciente tiene varias visitas. |
+| **🛠️ Solución** | Pipeline de scikit-learn con división por patient_id, imputación, escalado y validaciones de datos. |
+| **📈 Entregables** | Script de entrenamiento con métricas en JSON y notebook guiado. |
+| **🧪 Calidad** | 6 pruebas automatizadas (separación de pacientes, imputación, duplicados, columnas faltantes). |
+| **👤 Autor** | Dody Dueñas Remache. |
 
 ## El problema
 
@@ -51,3 +71,10 @@ Se conserva [la fuente original sin salidas](notebooks/original_sin_salidas.ipyn
 ## Autor
 
 Dody Salim Dueñas Remache · formación Henry, módulo 4.
+
+---
+
+<p align="center">
+<b>Dody Dueñas Remache</b> · Analista de Datos / Data Scientist<br>
+<a href="https://dodysalim.github.io/">Portafolio</a> · <a href="https://github.com/dodysalim">GitHub</a> · <a href="https://www.linkedin.com/in/dody-duenas/">LinkedIn</a> · <a href="mailto:dodydurema67@gmail.com">dodydurema67@gmail.com</a>
+</p>
