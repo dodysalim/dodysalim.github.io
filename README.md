@@ -16,7 +16,13 @@ Una sola ficha reúne los dos trabajos del módulo; no se cuentan como dos proye
 ## Código y vista local
 
 - `index.html`: estructura y metadatos.
-- `app.js`: catálogo, búsqueda, filtros, casos y análisis.
+- `js/main.js`: punto de entrada (módulos ES).
+- `js/data/projects.js`: contenido de las fichas, créditos y presentación (solo datos).
+- `js/catalog.js`: reglas del catálogo (origen, enlaces, orden, búsqueda); funciones puras.
+- `js/templates.js`: plantillas de tarjetas y diálogo.
+- `js/projects-view.js`: cuadrícula, filtros y diálogo.
+- `js/bank-analysis.js`: agregación (pura) y gráfico del análisis interactivo.
+- `effects.js`: animaciones, métricas y trayectoria.
 - `i18n.js`: traducción y detección español/inglés.
 - `style.css`: presentación oscura y reglas adaptables al ancho.
 - `bank-data.json`: agregados originales de la vista interactiva.
@@ -29,10 +35,10 @@ Abre http://localhost:8000. Para la práctica M4, sigue las instrucciones de su 
 
 ## Actualizar y comprobar
 
-Actualiza las fichas originales en `app.js` y sus traducciones en `i18n.js`. Comprueba los filtros de Henry / No Country / Personales, búsqueda vacía, diálogos, cambio de idioma y tabla de agregados. Mantén la atribución de proyectos colectivos y distingue pruebas, resultados de notebooks y escenarios simulados.
+Actualiza las fichas en `js/data/projects.js` y sus traducciones en `i18n.js`. Comprueba los filtros de Henry / No Country / Personales, búsqueda vacía, diálogos, cambio de idioma y tabla de agregados. Mantén la atribución de proyectos colectivos y distingue pruebas, resultados de notebooks y escenarios simulados.
 
 ```bash
-node --check app.js
+node --test tests/js/*.test.mjs
 node --check i18n.js
 python -m pip install -r projects/healthpredict/requirements.txt
 python -m pytest projects/healthpredict/tests -q -o pythonpath=projects/healthpredict

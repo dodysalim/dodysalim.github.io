@@ -17,7 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: node --check app.js
+      - run: for f in js/*.js js/data/*.js; do node --check --input-type=module < "$f"; done
+      - run: node --test tests/js/*.test.mjs
       - run: node --check i18n.js
       - run: python -m json.tool bank-data.json > /dev/null
       - run: python -m pip install pandas scikit-learn pytest
