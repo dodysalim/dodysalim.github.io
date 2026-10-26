@@ -123,7 +123,7 @@ const normalizeText = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'
 let activeFilter='all';
 const search=document.getElementById('project-search');
 const powerbiRepos=new Set(["Proyecto_Integrador_M5", "refrigerant-gas-dashboard", "FleetLogix-Master", "Cliente360-Predictive-Insight", "-E-commerce-Churn-Model-S03-26-Equipo-40-Data-Science", "churn-prediction-financeguard", "Proyecto-No-Country", "data-science-analytics-toolkit", "S02-26-E45-Data_Science_EquineLead"]);
-const reviewStatus={'refrigerant-gas-dashboard':'54 pruebas · 5 vistas','Cliente360-Predictive-Insight':'6 pruebas de código','FleetLogix-Master':'5 pruebas de código','Proyecto_Integrador_M5':'14 pruebas · dashboard','-E-commerce-Churn-Model-S03-26-Equipo-40-Data-Science':'25 pruebas · modo demo','data-science-analytics-toolkit':'7 vistas · muestra real','Proyecto-No-Country':'14 pruebas ETL y reportes','@health':'6 pruebas · M4'};
+const reviewStatus={'refrigerant-gas-dashboard':'54 pruebas · 5 vistas','Cliente360-Predictive-Insight':'7 pruebas · CI','FleetLogix-Master':'5 pruebas · PostgreSQL verificado','Proyecto_Integrador_M5':'14 pruebas · dashboard','-E-commerce-Churn-Model-S03-26-Equipo-40-Data-Science':'25 pruebas · modo demo','data-science-analytics-toolkit':'9 pruebas · 7 vistas','Proyecto-No-Country':'14 pruebas ETL y reportes','ConversaAI-NLP-Support-Analytics':'4 pruebas · CI','@health':'6 pruebas · M4'};
 function renderProjects(filter=activeFilter){
  activeFilter=filter;grid.replaceChildren();let count=0;
  const query=normalizeText(search.value.trim());
