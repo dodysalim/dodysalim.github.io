@@ -46,3 +46,11 @@ header{position:sticky;top:0;z-index:20;background:#080b12cc;backdrop-filter:blu
 .reveal.in{opacity:1;transform:none}
 @media(max-width:650px){.metrics{grid-template-columns:repeat(2,1fr);gap:10px}header{position:static}}
 @media(prefers-reduced-motion:reduce){body:before,body:after,.role-line .rotator{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+.timeline{list-style:none;margin:10px 0 0;padding:0 0 0 28px;position:relative;display:grid;gap:18px}
+.timeline:before{content:'';position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(#75e6ce,#8f7bff)}
+.timeline li{position:relative;background:linear-gradient(140deg,#151c2b,#0f1520);border:1px solid var(--line);border-radius:14px;padding:18px 22px;transition:border-color .25s,transform .25s}
+.timeline li:hover{border-color:#75e6ce;transform:translateX(4px)}
+.timeline li:before{content:'';position:absolute;left:-27px;top:24px;width:12px;height:12px;border-radius:50%;background:#080b12;border:2px solid #75e6ce;box-shadow:0 0 12px #75e6ce88}
+.tl-date{font-size:12px;font-weight:700;letter-spacing:1px;color:#75e6ce;text-transform:uppercase}
+.timeline h3{margin:4px 0 4px;font-size:19px}.timeline p{margin:0;color:var(--muted);font-size:15px}
+nav a{position:relative}nav a.active{color:#75e6ce}
